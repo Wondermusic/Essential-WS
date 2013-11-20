@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window xmlns:x="http://www.w3.org/2001/XMLSchema-instance" x:type="PlayerWindow">
+  <IsDefault>false</IsDefault>
+  <Width>1280</Width>
+  <Height>720</Height>
+  <Name>TV</Name>
+  <Id>8</Id>
+  <BackgroundBrush />
+  <WindowAnimations />
+  <WindowControls>
+    <Control x:type="Image">
+      <Name>Background</Name>
+      <Id>1</Id>
+      <Width>1280</Width>
+      <Height>720</Height>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ImageStyle StyleId="Background" />
+      <ImageStretch>None</ImageStretch>
+      <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+    </Control>
+    <Control x:type="Group">
+      <Name>NowPlaying</Name>
+      <Id>2</Id>
+      <Width>900</Width>
+      <Height>180</Height>
+      <PosY>542</PosY>
+      <VisibleCondition />
+      <Animations>
+        <Animation x:type="Slide" Condition="WindowOpen" Duration="1000" Easing="EaseOut" StartX="-900" StartY="542" EndY="542" />
+        <Animation x:type="Slide" Condition="WindowClose" Duration="1000" Easing="EaseIn" StartY="542" EndX="-900" EndY="542" />
+      </Animations>
+      <MediaPortalFocusControls />
+      <GroupStyle StyleId="Now Playing Video" />
+      <GroupControls>
+        <Control x:type="Label">
+          <Name>Title</Name>
+          <Id>3</Id>
+          <Width>880</Width>
+          <Height>80</Height>
+          <PosX>5</PosX>
+          <PosY>-6</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="70" />
+          <LabelText>#TV.View.title</LabelText>
+          <LabelTextAlignment>Center</LabelTextAlignment>
+          <ScrollDelay>2</ScrollDelay>
+          <ScrollSpeed>10</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+          <ScrollSeperator>   |   </ScrollSeperator>
+        </Control>
+        <Control x:type="Label">
+          <Name>CurrentPlayTime</Name>
+          <Id>4</Id>
+          <Width>300</Width>
+          <Height>70</Height>
+          <PosX>5</PosX>
+          <PosY>106</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="60" />
+          <LabelText>#TV.View.start</LabelText>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
+          <ScrollSpeed>2</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+        </Control>
+        <Control x:type="Label">
+          <Name>CurrentDuration</Name>
+          <Id>5</Id>
+          <Width>300</Width>
+          <Height>70</Height>
+          <PosX>580</PosX>
+          <PosY>106</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="60" />
+          <LabelText>#TV.View.stop</LabelText>
+          <LabelTextAlignment>Right</LabelTextAlignment>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
+          <ScrollSpeed>2</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+        </Control>
+        <Control x:type="ProgressBar">
+          <Name>ProgressBar3</Name>
+          <Id>6</Id>
+          <Width>880</Width>
+          <Height>40</Height>
+          <PosX>5</PosX>
+          <PosY>75</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ProgressBarStyle StyleId="TV2" />
+          <ProgressValue>#TV.Record.percent3</ProgressValue>
+        </Control>
+        <Control x:type="ProgressBar">
+          <Name>ProgressBar1</Name>
+          <Id>7</Id>
+          <Width>880</Width>
+          <Height>40</Height>
+          <PosX>5</PosX>
+          <PosY>75</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ProgressBarStyle StyleId="Standard" />
+          <ProgressValue>#TV.View.Percentage</ProgressValue>
+        </Control>
+        <Control x:type="ProgressBar">
+          <Name>ProgressBar2</Name>
+          <Id>8</Id>
+          <Width>880</Width>
+          <Height>40</Height>
+          <PosX>5</PosX>
+          <PosY>75</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ProgressBarStyle StyleId="TV1" />
+          <ProgressValue>#TV.Record.percent2</ProgressValue>
+        </Control>
+      </GroupControls>
+    </Control>
+    <Control x:type="Group">
+      <Name>Informations</Name>
+      <Id>9</Id>
+      <Width>600</Width>
+      <Height>300</Height>
+      <PosX>680</PosX>
+      <PosY>210</PosY>
+      <VisibleCondition />
+      <Animations>
+        <Animation x:type="Slide" Condition="WindowOpen" Duration="1000" Easing="EaseOut" StartX="1280" StartY="210" EndX="680" EndY="210" />
+        <Animation x:type="Slide" Condition="WindowClose" Duration="1000" Easing="EaseIn" StartX="680" StartY="210" EndX="1280" EndY="210" />
+      </Animations>
+      <MediaPortalFocusControls />
+      <GroupStyle StyleId="Standard Informations" />
+      <GroupControls>
+        <Control x:type="Label">
+          <Name>NowPlaying</Name>
+          <Id>10</Id>
+          <Width>300</Width>
+          <Height>60</Height>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="50" />
+          <LabelText>@NowPlaying+:</LabelText>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
+          <ScrollSpeed>2</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+        </Control>
+        <Control x:type="Label">
+          <Name>Genre</Name>
+          <Id>11</Id>
+          <Width>290</Width>
+          <Height>60</Height>
+          <PosX>300</PosX>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="50" />
+          <LabelText>#TV.View.genre</LabelText>
+          <LabelTextAlignment>Right</LabelTextAlignment>
+          <ScrollDelay>2</ScrollDelay>
+          <ScrollSpeed>10</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+          <ScrollSeperator>  |  </ScrollSeperator>
+        </Control>
+        <Control x:type="Label">
+          <Name>Channel</Name>
+          <Id>12</Id>
+          <Width>590</Width>
+          <Height>60</Height>
+          <PosY>60</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="50" />
+          <LabelText>#TV.View.channel</LabelText>
+          <LabelTextAlignment>Right</LabelTextAlignment>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
+          <ScrollDelay>2</ScrollDelay>
+          <ScrollSpeed>10</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+          <ScrollSeperator>  |  </ScrollSeperator>
+        </Control>
+        <Control x:type="Label">
+          <Name>NextPlaying</Name>
+          <Id>13</Id>
+          <Width>300</Width>
+          <Height>60</Height>
+          <PosY>170</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="50" />
+          <LabelText>@Next+:</LabelText>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
+          <ScrollSpeed>2</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+        </Control>
+        <Control x:type="Label">
+          <Name>NextPlaying</Name>
+          <Id>14</Id>
+          <Width>590</Width>
+          <Height>60</Height>
+          <PosY>225</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="50" />
+          <LabelText>#TV.Next.title+ / +#TV.Next.genre+ / +#TV.Next.start+ - +#TV.Next.stop</LabelText>
+          <ScrollDelay>2</ScrollDelay>
+          <ScrollSpeed>10</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+          <ScrollSeperator>   |   </ScrollSeperator>
+        </Control>
+      </GroupControls>
+    </Control>
+    <Control x:type="Image">
+      <Name>Thumb</Name>
+      <Id>15</Id>
+      <Width>300</Width>
+      <Height>300</Height>
+      <PosX>13</PosX>
+      <PosY>190</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ImageStyle StyleId="Empty" />
+      <Image>#TV.View.thumb</Image>
+      <DefaultImage>\Video\defaultTVBig.png</DefaultImage>
+      <ImageStretch>Fill</ImageStretch>
+      <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+    </Control>
+    <Control x:type="Group">
+      <Name>Date / Time</Name>
+      <Id>16</Id>
+      <Width>640</Width>
+      <Height>150</Height>
+      <VisibleCondition />
+      <Animations>
+        <Animation x:type="Zoom" Condition="WindowOpen" Duration="500" Easing="EaseInOut" />
+        <Animation x:type="Zoom" Condition="WindowClose" Duration="500" Easing="EaseInOut" From="100" To="0" />
+        <Animation x:type="Fade" Condition="WindowClose" Duration="500" Easing="EaseInOut" From="100" To="0" />
+        <Animation x:type="Fade" Condition="WindowOpen" Duration="500" Easing="EaseInOut" />
+      </Animations>
+      <MediaPortalFocusControls />
+      <GroupStyle StyleId="DateTime" />
+      <GroupControls>
+        <Control x:type="Label">
+          <Name>Time</Name>
+          <Id>17</Id>
+          <Width>625</Width>
+          <Height>60</Height>
+          <PosX>5</PosX>
+          <PosY>5</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="50" />
+          <LabelText>#time</LabelText>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
+          <ScrollSpeed>2</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+        </Control>
+        <Control x:type="Label">
+          <Name>Date</Name>
+          <Id>18</Id>
+          <Width>625</Width>
+          <Height>60</Height>
+          <PosX>5</PosX>
+          <PosY>60</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="50" />
+          <LabelText>#date</LabelText>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
+          <ScrollSpeed>2</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+        </Control>
+      </GroupControls>
+    </Control>
+  </WindowControls>
+  <VisibleCondition>IsPlayer(IsTV)</VisibleCondition>
+</Window>

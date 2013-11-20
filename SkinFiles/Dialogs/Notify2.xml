@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Dialog xmlns:x="http://www.w3.org/2001/XMLSchema-instance" x:type="MediaPortalDialog">
+  <Name>Notify2</Name>
+  <Id>101</Id>
+  <Width>768</Width>
+  <Height>549</Height>
+  <PosX>256</PosX>
+  <PosY>85</PosY>
+  <BackgroundBrush />
+  <DialogAnimations />
+  <DialogControls>
+    <Control x:type="Image">
+      <Name>Background</Name>
+      <Id>7</Id>
+      <Width>768</Width>
+      <Height>549</Height>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ImageStyle StyleId="Dialog Background" />
+      <ImageStretch>None</ImageStretch>
+      <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+    </Control>
+    <Control x:type="Label">
+      <Name>Dialog Title</Name>
+      <Id>1</Id>
+      <Width>526</Width>
+      <Height>70</Height>
+      <PosX>119</PosX>
+      <PosY>64</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <LabelStyle StyleId="Dialog Title" />
+      <LabelText>#Dialog.Label1</LabelText>
+      <ScrollDelay>2</ScrollDelay>
+      <ScrollSpeed>5</ScrollSpeed>
+      <ScrollSeperator>  |  </ScrollSeperator>
+    </Control>
+    <Control x:type="Label">
+      <Name>TextArea1</Name>
+      <Id>3</Id>
+      <Width>647</Width>
+      <Height>50</Height>
+      <PosX>74</PosX>
+      <PosY>125</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <LabelStyle StyleId="Dialog Text" />
+      <LabelText>#Dialog.Label2</LabelText>
+      <ScrollDelay>2</ScrollDelay>
+      <ScrollSpeed>4</ScrollSpeed>
+      <ScrollSeperator>  |  </ScrollSeperator>
+    </Control>
+    <Control x:type="Label">
+      <Name>TextArea2</Name>
+      <Id>4</Id>
+      <Width>619</Width>
+      <Height>50</Height>
+      <PosX>74</PosX>
+      <PosY>170</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <LabelStyle StyleId="Dialog Text" />
+      <LabelText>#Dialog.Label3</LabelText>
+      <ScrollDelay>2</ScrollDelay>
+      <ScrollSpeed>4</ScrollSpeed>
+      <ScrollSeperator>  |  </ScrollSeperator>
+    </Control>
+    <Control x:type="Label">
+      <Name>TextArea3</Name>
+      <Id>6</Id>
+      <Width>619</Width>
+      <Height>50</Height>
+      <PosX>74</PosX>
+      <PosY>215</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <LabelStyle StyleId="Dialog Text" />
+      <LabelText>#Dialog.Label4</LabelText>
+      <ScrollDelay>2</ScrollDelay>
+      <ScrollSpeed>4</ScrollSpeed>
+      <ScrollSeperator>  |  </ScrollSeperator>
+    </Control>
+    <Control x:type="Image">
+      <Name>CommonWaiting</Name>
+      <Id>5</Id>
+      <Width>150</Width>
+      <Height>150</Height>
+      <PosX>301</PosX>
+      <PosY>256</PosY>
+      <VisibleCondition />
+      <Animations>
+        <Animation x:type="Rotate" Condition="VisibleTrue" Duration="5000" Repeat="1000" Pos3DZTo="-360" />
+        <Animation x:type="Rotate" Condition="WindowOpen" Duration="4000" Repeat="1000" Pos3DZTo="-360" />
+      </Animations>
+      <MediaPortalFocusControls />
+      <ImageStyle>
+        <BorderThickness>0,0,0,0</BorderThickness>
+        <CornerRadius>0,0,0,0</CornerRadius>
+      </ImageStyle>
+      <Image>\common.waiting.1.png</Image>
+      <ImageStretch>Fill</ImageStretch>
+      <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+    </Control>
+  </DialogControls>
+  <VisibleCondition>IsMediaPortalDialog(101)</VisibleCondition>
+</Dialog>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Dialog xmlns:x="http://www.w3.org/2001/XMLSchema-instance" x:type="MediaPortalDialog">
+  <Name>CIMenu</Name>
+  <Id>2018</Id>
+  <Width>768</Width>
+  <Height>549</Height>
+  <PosX>256</PosX>
+  <PosY>85</PosY>
+  <BackgroundBrush />
+  <DialogAnimations />
+  <DialogControls>
+    <Control x:type="Image">
+      <Name>Background</Name>
+      <Id>5</Id>
+      <Width>768</Width>
+      <Height>549</Height>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ImageStyle StyleId="Dialog Background" />
+      <ImageStretch>None</ImageStretch>
+      <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+    </Control>
+    <Control x:type="Label">
+      <Name>Dialog Title</Name>
+      <Id>1</Id>
+      <Width>526</Width>
+      <Height>70</Height>
+      <PosX>119</PosX>
+      <PosY>64</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <LabelStyle StyleId="Dialog Title" />
+      <LabelText>#Dialog.Label4</LabelText>
+      <IsScrollingEnabled>false</IsScrollingEnabled>
+      <ScrollSpeed>2</ScrollSpeed>
+      <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+    </Control>
+    <Control x:type="Label">
+      <Name>TextArea1</Name>
+      <Id>3</Id>
+      <Width>619</Width>
+      <Height>60</Height>
+      <PosX>74</PosX>
+      <PosY>125</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <LabelStyle StyleId="Dialog Text" />
+      <LabelText>New Label</LabelText>
+      <IsScrollingEnabled>false</IsScrollingEnabled>
+      <ScrollSpeed>2</ScrollSpeed>
+      <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+    </Control>
+    <Control x:type="List">
+      <Name>NewList</Name>
+      <Id>4</Id>
+      <Width>630</Width>
+      <Height>229</Height>
+      <PosX>70</PosX>
+      <PosY>180</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ListControlStyle>
+        <BorderThickness>0,0,0,0</BorderThickness>
+        <CornerRadius>0,0,0,0</CornerRadius>
+      </ListControlStyle>
+      <ListType>MediaPortalDialogList</ListType>
+      <ListLayout>Auto</ListLayout>
+      <VerticalItemStyle StyleId="Dialog" />
+      <HorizontalItemStyle>
+        <BorderThickness>1,1,1,1</BorderThickness>
+        <CornerRadius>4,4,4,4</CornerRadius>
+        <NoFocusBrush x:type="ColorBrush" Color="#FF000000" />
+        <NoFocusBorderBrush x:type="ColorBrush" Color="#FF00BFFF" />
+        <FocusBrush x:type="ColorBrush" Color="#FF00BFFF" />
+        <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+        <FontSize>18</FontSize>
+        <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+        <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
+        <LabelMargin>3,3,3,3</LabelMargin>
+        <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
+        <EnableImage>true</EnableImage>
+        <ImageMargin>3,3,3,33</ImageMargin>
+        <ImageVerticalAlignment>Top</ImageVerticalAlignment>
+        <Width>135</Width>
+        <Height>207</Height>
+        <ItemMargin>1,1,1,1</ItemMargin>
+      </HorizontalItemStyle>
+      <CoverFlowItemStyle>
+        <BorderThickness>1,1,1,1</BorderThickness>
+        <CornerRadius>4,4,4,4</CornerRadius>
+        <NoFocusBrush x:type="ColorBrush" Color="#FF000000" />
+        <NoFocusBorderBrush x:type="ColorBrush" Color="#FF00BFFF" />
+        <FocusBrush x:type="ColorBrush" Color="#FF00BFFF" />
+        <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+        <FontSize>18</FontSize>
+        <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+        <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
+        <LabelMargin>3,3,3,3</LabelMargin>
+        <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
+        <EnableImage>true</EnableImage>
+        <ImageMargin>3,3,3,33</ImageMargin>
+        <ImageVerticalAlignment>Top</ImageVerticalAlignment>
+        <Width>135</Width>
+        <Height>207</Height>
+      </CoverFlowItemStyle>
+    </Control>
+  </DialogControls>
+  <VisibleCondition>IsMediaPortalDialog(2018)</VisibleCondition>
+</Dialog>

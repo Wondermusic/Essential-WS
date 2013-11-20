@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window xmlns:x="http://www.w3.org/2001/XMLSchema-instance" x:type="MPDisplayWindow">
+  <IsDefault>true</IsDefault>
+  <Width>1280</Width>
+  <Height>720</Height>
+  <Name>Home</Name>
+  <Id>1</Id>
+  <BackgroundBrush />
+  <WindowAnimations />
+  <WindowControls>
+    <Control x:type="Image">
+      <Name>Background</Name>
+      <Id>1</Id>
+      <Width>1280</Width>
+      <Height>720</Height>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ImageStyle StyleId="Background" />
+      <ImageStretch>None</ImageStretch>
+      <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+    </Control>
+    <Control x:type="Group">
+      <Name>Date / Time</Name>
+      <Id>3</Id>
+      <Width>1280</Width>
+      <Height>720</Height>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <GroupStyle StyleId="Clear" />
+      <GroupControls>
+        <Control x:type="Rectangle">
+          <Name>NewRectangle</Name>
+          <Id>4</Id>
+          <Width>600</Width>
+          <Height>200</Height>
+          <PosX>340</PosX>
+          <PosY>306</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <BorderThickness>3,3,3,3</BorderThickness>
+          <CornerRadius>20,20,20,20</CornerRadius>
+          <BackgroundBrush x:type="ColorBrush" Color="#81000000" />
+          <BorderBrush x:type="ColorBrush" Color="#76FFFFFF" />
+        </Control>
+        <Control x:type="Label">
+          <Name>Time</Name>
+          <Id>5</Id>
+          <Width>590</Width>
+          <Height>80</Height>
+          <PosX>345</PosX>
+          <PosY>310</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="70" />
+          <LabelText>#MPD.SystemInfo.Label.Time</LabelText>
+          <LabelTextAlignment>Center</LabelTextAlignment>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
+          <ScrollSpeed>2</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+        </Control>
+        <Control x:type="Label">
+          <Name>Date</Name>
+          <Id>6</Id>
+          <Width>590</Width>
+          <Height>80</Height>
+          <PosX>345</PosX>
+          <PosY>408</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="70" />
+          <LabelText>#MPD.SystemInfo.Label.Date2</LabelText>
+          <LabelTextAlignment>Center</LabelTextAlignment>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
+          <ScrollSpeed>2</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+        </Control>
+      </GroupControls>
+    </Control>
+  </WindowControls>
+</Window>

@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window xmlns:x="http://www.w3.org/2001/XMLSchema-instance" x:type="PlayerWindow">
+  <IsDefault>false</IsDefault>
+  <Width>1280</Width>
+  <Height>720</Height>
+  <Name>Music</Name>
+  <Id>3</Id>
+  <BackgroundBrush />
+  <WindowAnimations />
+  <WindowControls>
+    <Control x:type="Image">
+      <Name>Background</Name>
+      <Id>1</Id>
+      <Width>1280</Width>
+      <Height>720</Height>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ImageStyle StyleId="Background" />
+      <ImageStretch>None</ImageStretch>
+      <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+    </Control>
+    <Control x:type="Group">
+      <Name>NowPlaying</Name>
+      <Id>2</Id>
+      <Width>900</Width>
+      <Height>470</Height>
+      <PosX>380</PosX>
+      <PosY>250</PosY>
+      <VisibleCondition />
+      <Animations>
+        <Animation x:type="Slide" Condition="WindowOpen" Duration="1000" Easing="EaseOut" StartX="1280" StartY="250" EndX="380" EndY="250" />
+        <Animation x:type="Slide" Condition="WindowClose" Duration="1000" Easing="EaseIn" StartX="380" StartY="250" EndX="1280" EndY="250" />
+      </Animations>
+      <MediaPortalFocusControls />
+      <GroupStyle StyleId="Standard NowPlaying" />
+      <GroupControls>
+        <Control x:type="Label">
+          <Name>Artist</Name>
+          <Id>3</Id>
+          <Width>890</Width>
+          <Height>80</Height>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="70" />
+          <LabelText>#Play.Current.Artist</LabelText>
+          <ScrollDelay>2</ScrollDelay>
+          <ScrollSpeed>10</ScrollSpeed>
+          <ScrollSeperator>   |   </ScrollSeperator>
+        </Control>
+        <Control x:type="Label">
+          <Name>Title</Name>
+          <Id>4</Id>
+          <Width>890</Width>
+          <Height>70</Height>
+          <PosY>70</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="60" />
+          <LabelText>#Play.Current.Title</LabelText>
+          <ScrollDelay>2</ScrollDelay>
+          <ScrollSpeed>10</ScrollSpeed>
+          <ScrollSeperator>   |   </ScrollSeperator>
+        </Control>
+        <Control x:type="Image">
+          <Name>Cover</Name>
+          <Id>5</Id>
+          <Width>200</Width>
+          <Height>200</Height>
+          <PosX>13</PosX>
+          <PosY>246</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="Empty" />
+          <Image>#Play.Current.Thumb</Image>
+          <DefaultImage>\Music\defaultAudioBig.png</DefaultImage>
+          <ImageStretch>Uniform</ImageStretch>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+        <Control x:type="Equalizer">
+          <Name>Equalizer</Name>
+          <Id>6</Id>
+          <Width>654</Width>
+          <Height>186</Height>
+          <PosX>228</PosX>
+          <PosY>273</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <EqualizerStyle>
+            <BorderThickness>0,0,0,0</BorderThickness>
+            <CornerRadius>0,0,0,0</CornerRadius>
+            <BackgroundBrush />
+            <BorderBrush x:type="ColorBrush" Color="#FF00BFFF" />
+            <LowRangeColor x:type="GradientBrush">
+              <Angle>Vertical</Angle>
+              <GradientStops>
+                <GradientStop Color="#FF000000" Offset="1" />
+                <GradientStop Color="#FF7FFF00" Offset="0.237" />
+                <GradientStop Color="#FFFFFF00" Offset="0" />
+              </GradientStops>
+            </LowRangeColor>
+            <MedRangeColor x:type="GradientBrush">
+              <Angle>Vertical</Angle>
+              <GradientStops>
+                <GradientStop Color="#FFFFFF00" Offset="0.468" />
+                <GradientStop Color="#FFFF0000" Offset="0" />
+              </GradientStops>
+            </MedRangeColor>
+            <MaxRangeColor x:type="ColorBrush" Color="#FFFF0000" />
+            <BandBorderColor x:type="ColorBrush" Color="#FF00BFFF" />
+            <FallOffColor x:type="ColorBrush" Color="#FF00BFFF" />
+          </EqualizerStyle>
+          <BandCount>18</BandCount>
+          <BandSpacing>4</BandSpacing>
+          <BandCornerRadius>0</BandCornerRadius>
+          <FalloffSpeed>4</FalloffSpeed>
+          <FallOffHeight>2</FallOffHeight>
+        </Control>
+        <Control x:type="ProgressBar">
+          <Name>ProgressBar</Name>
+          <Id>7</Id>
+          <Width>330</Width>
+          <Height>35</Height>
+          <PosX>279</PosX>
+          <PosY>183</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ProgressBarStyle>
+            <BorderThickness>1,1,1,1</BorderThickness>
+            <CornerRadius>5,5,5,5</CornerRadius>
+            <BackgroundBrush x:type="ColorBrush" Color="#FF000000" />
+            <BorderBrush x:type="ColorBrush" Color="#FFC0C0C0" />
+            <ShadeBrush x:type="GradientBrush">
+              <Angle>Vertical</Angle>
+              <GradientStops>
+                <GradientStop Color="#00000000" Offset="0" />
+                <GradientStop Color="#FF000000" Offset="1" />
+              </GradientStops>
+            </ShadeBrush>
+            <BarMargin>2,2,2,2</BarMargin>
+            <BarBorderThickness>1,1,1,1</BarBorderThickness>
+            <BarCornerRadius>3,3,3,3</BarCornerRadius>
+            <BarBorderBrush x:type="ColorBrush" Color="#FFC0C0C0" />
+            <BarBackgroundBrush x:type="GradientBrush">
+              <Angle>Vertical</Angle>
+              <GradientStops>
+                <GradientStop Color="#FF00BFFF" Offset="0.563" />
+                <GradientStop Color="#FF1294BF" Offset="1" />
+              </GradientStops>
+            </BarBackgroundBrush>
+          </ProgressBarStyle>
+          <ProgressValue>#percentage</ProgressValue>
+        </Control>
+        <Control x:type="Label">
+          <Name>CurrentPlayTime</Name>
+          <Id>8</Id>
+          <Width>280</Width>
+          <Height>70</Height>
+          <PosY>160</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="60" />
+          <LabelText>#currentplaytime</LabelText>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
+          <ScrollSpeed>2</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+        </Control>
+        <Control x:type="Label">
+          <Name>CurrentDuration</Name>
+          <Id>9</Id>
+          <Width>280</Width>
+          <Height>70</Height>
+          <PosX>610</PosX>
+          <PosY>160</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="60" />
+          <LabelText>#Play.Current.Duration</LabelText>
+          <LabelTextAlignment>Right</LabelTextAlignment>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
+          <ScrollSpeed>2</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+        </Control>
+      </GroupControls>
+    </Control>
+    <Control x:type="Group">
+      <Name>NextPlaying</Name>
+      <Id>10</Id>
+      <Width>335</Width>
+      <Height>470</Height>
+      <PosY>250</PosY>
+      <VisibleCondition />
+      <Animations>
+        <Animation x:type="Slide" Condition="WindowOpen" Duration="1000" Easing="EaseOut" StartX="-335" StartY="250" EndY="250" />
+        <Animation x:type="Slide" Condition="WindowClose" Duration="1000" Easing="EaseIn" StartY="250" EndX="-335" EndY="250" />
+      </Animations>
+      <MediaPortalFocusControls />
+      <GroupStyle StyleId="NextPlaying" />
+      <GroupControls>
+        <Control x:type="Label">
+          <Name>Next</Name>
+          <Id>11</Id>
+          <Width>325</Width>
+          <Height>50</Height>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="40" />
+          <LabelText>@Next+:</LabelText>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
+          <ScrollSpeed>2</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+        </Control>
+        <Control x:type="Label">
+          <Name>Artist</Name>
+          <Id>12</Id>
+          <Width>325</Width>
+          <Height>50</Height>
+          <PosY>55</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="40" />
+          <LabelText>@Artist+:</LabelText>
+          <ScrollDelay>2</ScrollDelay>
+          <ScrollSpeed>10</ScrollSpeed>
+          <ScrollSeperator>  |  </ScrollSeperator>
+        </Control>
+        <Control x:type="Label">
+          <Name>NextArtist</Name>
+          <Id>13</Id>
+          <Width>325</Width>
+          <Height>60</Height>
+          <PosY>94</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="50" />
+          <LabelText>#Play.Next.Artist</LabelText>
+          <ScrollDelay>2</ScrollDelay>
+          <ScrollSpeed>10</ScrollSpeed>
+          <ScrollSeperator>  |  </ScrollSeperator>
+        </Control>
+        <Control x:type="Label">
+          <Name>Title</Name>
+          <Id>14</Id>
+          <Width>325</Width>
+          <Height>50</Height>
+          <PosY>160</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="40" />
+          <LabelText>@Title+:</LabelText>
+          <ScrollDelay>2</ScrollDelay>
+          <ScrollSpeed>10</ScrollSpeed>
+          <ScrollSeperator>  |  </ScrollSeperator>
+        </Control>
+        <Control x:type="Label">
+          <Name>NextTitle</Name>
+          <Id>15</Id>
+          <Width>325</Width>
+          <Height>60</Height>
+          <PosY>200</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="50" />
+          <LabelText>#Play.Next.Title</LabelText>
+          <ScrollDelay>2</ScrollDelay>
+          <ScrollSpeed>10</ScrollSpeed>
+          <ScrollSeperator>  |  </ScrollSeperator>
+        </Control>
+        <Control x:type="Label">
+          <Name>Runtime</Name>
+          <Id>16</Id>
+          <Width>325</Width>
+          <Height>50</Height>
+          <PosY>260</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="40" />
+          <LabelText>@Runtime+:</LabelText>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
+          <ScrollDelay>2</ScrollDelay>
+          <ScrollSpeed>10</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+          <ScrollSeperator>  |  </ScrollSeperator>
+        </Control>
+        <Control x:type="Label">
+          <Name>NextRunTime</Name>
+          <Id>17</Id>
+          <Width>325</Width>
+          <Height>60</Height>
+          <PosY>300</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="50" />
+          <LabelText>#Play.Next.Duration</LabelText>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
+          <ScrollDelay>2</ScrollDelay>
+          <ScrollSpeed>10</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+          <ScrollSeperator>  |  </ScrollSeperator>
+        </Control>
+      </GroupControls>
+    </Control>
+    <Control x:type="Group">
+      <Name>Date / Time</Name>
+      <Id>18</Id>
+      <Width>640</Width>
+      <Height>150</Height>
+      <VisibleCondition />
+      <Animations>
+        <Animation x:type="Zoom" Condition="WindowOpen" Duration="500" Easing="EaseInOut" />
+        <Animation x:type="Zoom" Condition="WindowClose" Duration="500" Easing="EaseInOut" From="100" To="0" />
+        <Animation x:type="Fade" Condition="WindowClose" Duration="500" Easing="EaseInOut" From="100" To="0" />
+        <Animation x:type="Fade" Condition="WindowOpen" Duration="500" Easing="EaseInOut" />
+      </Animations>
+      <MediaPortalFocusControls />
+      <GroupStyle StyleId="DateTime" />
+      <GroupControls>
+        <Control x:type="Label">
+          <Name>Time</Name>
+          <Id>19</Id>
+          <Width>625</Width>
+          <Height>60</Height>
+          <PosX>5</PosX>
+          <PosY>5</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="50" />
+          <LabelText>#time</LabelText>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
+          <ScrollSpeed>2</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+        </Control>
+        <Control x:type="Label">
+          <Name>Date</Name>
+          <Id>20</Id>
+          <Width>625</Width>
+          <Height>60</Height>
+          <PosX>5</PosX>
+          <PosY>60</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="50" />
+          <LabelText>#date</LabelText>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
+          <ScrollSpeed>2</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+        </Control>
+      </GroupControls>
+    </Control>
+  </WindowControls>
+  <VisibleCondition>IsPlayer(IsCDA) || IsPlayer(IsMusic)</VisibleCondition>
+</Window>

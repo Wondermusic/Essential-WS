@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window xmlns:x="http://www.w3.org/2001/XMLSchema-instance" x:type="MediaPortalWindow">
+  <IsDefault>true</IsDefault>
+  <Width>1280</Width>
+  <Height>720</Height>
+  <Name>Plain</Name>
+  <Id>0</Id>
+  <BackgroundBrush />
+  <WindowAnimations />
+  <WindowControls>
+    <Control x:type="Image">
+      <Name>Background</Name>
+      <Id>1</Id>
+      <Width>1280</Width>
+      <Height>720</Height>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ImageStyle StyleId="Background" />
+      <ImageStretch>None</ImageStretch>
+      <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+    </Control>
+    <Control x:type="Group">
+      <Name>Date / Time</Name>
+      <Id>2</Id>
+      <Width>1280</Width>
+      <Height>720</Height>
+      <VisibleCondition>!IsControlVisible(8)</VisibleCondition>
+      <Animations>
+        <Animation x:type="Zoom" Condition="VisibleTrue" Duration="200" Easing="EaseInOut" />
+        <Animation x:type="Zoom" Condition="VisibleFalse" Duration="200" Easing="EaseInOut" From="100" To="0" />
+      </Animations>
+      <MediaPortalFocusControls />
+      <GroupStyle StyleId="Clear" />
+      <GroupControls>
+        <Control x:type="Rectangle">
+          <Name>NewRectangle</Name>
+          <Id>6</Id>
+          <Width>600</Width>
+          <Height>200</Height>
+          <PosX>340</PosX>
+          <PosY>306</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <BorderThickness>3,3,3,3</BorderThickness>
+          <CornerRadius>20,20,20,20</CornerRadius>
+          <BackgroundBrush x:type="ColorBrush" Color="#81000000" />
+          <BorderBrush x:type="ColorBrush" Color="#76FFFFFF" />
+        </Control>
+        <Control x:type="Label">
+          <Name>Time</Name>
+          <Id>4</Id>
+          <Width>590</Width>
+          <Height>80</Height>
+          <PosX>345</PosX>
+          <PosY>310</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="70" />
+          <LabelText>#time</LabelText>
+          <LabelTextAlignment>Center</LabelTextAlignment>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
+          <ScrollSpeed>2</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+        </Control>
+        <Control x:type="Label">
+          <Name>Date</Name>
+          <Id>5</Id>
+          <Width>590</Width>
+          <Height>80</Height>
+          <PosX>345</PosX>
+          <PosY>408</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="70" />
+          <LabelText>#date</LabelText>
+          <LabelTextAlignment>Center</LabelTextAlignment>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
+          <ScrollSpeed>2</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+        </Control>
+      </GroupControls>
+    </Control>
+    <Control x:type="Label">
+      <Name>CurrentModule</Name>
+      <Id>7</Id>
+      <Width>1280</Width>
+      <Height>70</Height>
+      <PosY>650</PosY>
+      <VisibleCondition />
+      <Animations>
+        <Animation x:type="Rotate" Condition="PropertyChanging" Duration="300" Pos3DXTo="90" />
+        <Animation x:type="Rotate" Condition="PropertyChanged" Duration="300" Pos3DXFrom="-90" />
+      </Animations>
+      <MediaPortalFocusControls />
+      <LabelStyle StyleId="60" />
+      <LabelText>#MPD.selecteditem</LabelText>
+      <LabelTextAlignment>Center</LabelTextAlignment>
+      <IsScrollingEnabled>false</IsScrollingEnabled>
+      <ScrollSpeed>2</ScrollSpeed>
+      <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+    </Control>
+    <Control x:type="Rectangle">
+      <Name>Rectangle</Name>
+      <Id>10</Id>
+      <Width>803</Width>
+      <Height>606</Height>
+      <PosX>382</PosX>
+      <PosY>35</PosY>
+      <VisibleCondition>IsControlVisible(8) ++ IsMediaPortalListLayout(Vertical)</VisibleCondition>
+      <IsWindowOpenVisible>false</IsWindowOpenVisible>
+      <Animations>
+        <Animation x:type="Slide" Condition="VisibleTrue" Duration="300" Easing="EaseInOut" StartX="382" StartY="720" EndX="382" EndY="35" />
+        <Animation x:type="Slide" Condition="VisibleFalse" Duration="300" Easing="EaseInOut" StartX="382" StartY="35" EndX="382" EndY="720" />
+      </Animations>
+      <MediaPortalFocusControls />
+      <BorderThickness>0,0,0,0</BorderThickness>
+      <CornerRadius>12,12,12,12</CornerRadius>
+      <BackgroundBrush x:type="ColorBrush" Color="#BE000000" />
+    </Control>
+    <Control x:type="Rectangle">
+      <Name>Rectangle</Name>
+      <Id>11</Id>
+      <Width>1103</Width>
+      <Height>622</Height>
+      <PosX>85</PosX>
+      <PosY>35</PosY>
+      <VisibleCondition>IsMediaPortalListLayout(Horizontal) || IsMediaPortalListLayout(CoverFlow)</VisibleCondition>
+      <IsWindowOpenVisible>false</IsWindowOpenVisible>
+      <Animations>
+        <Animation x:type="Slide" Condition="VisibleTrue" Duration="300" Easing="EaseInOut" StartX="85" StartY="720" EndX="85" EndY="35" />
+        <Animation x:type="Slide" Condition="VisibleFalse" Duration="300" Easing="EaseInOut" StartX="85" StartY="35" EndX="85" EndY="720" />
+      </Animations>
+      <MediaPortalFocusControls />
+      <BorderThickness>0,0,0,0</BorderThickness>
+      <CornerRadius>12,12,12,12</CornerRadius>
+      <BackgroundBrush x:type="ColorBrush" Color="#BE000000" />
+    </Control>
+    <Control x:type="List">
+      <Name>List</Name>
+      <Id>8</Id>
+      <Width>1100</Width>
+      <Height>600</Height>
+      <PosX>86</PosX>
+      <PosY>37</PosY>
+      <VisibleCondition>IsMediaPortalControlFocused(50) || IsMediaPortalControlFocused(51)</VisibleCondition>
+      <IsWindowOpenVisible>false</IsWindowOpenVisible>
+      <Animations>
+        <Animation x:type="Slide" Condition="VisibleTrue" Duration="300" Delay="100" Easing="EaseInOut" StartX="86" StartY="720" EndX="86" EndY="37" />
+        <Animation x:type="Slide" Condition="VisibleFalse" Duration="500" Easing="EaseInOut" StartX="86" StartY="37" EndX="86" EndY="720" />
+      </Animations>
+      <MediaPortalFocusControls />
+      <ListControlStyle>
+        <BorderThickness>0,0,0,0</BorderThickness>
+        <CornerRadius>0,0,0,0</CornerRadius>
+        <BackgroundBrush />
+      </ListControlStyle>
+      <ListType>MediaPortalListControl</ListType>
+      <ListLayout>Auto</ListLayout>
+      <VerticalItemStyle StyleId="Vertical" />
+      <HorizontalItemStyle StyleId="Horizontal" />
+      <CoverFlowItemStyle StyleId="CoverFlow" />
+    </Control>
+    <Control x:type="Image">
+      <Name>Image</Name>
+      <Id>9</Id>
+      <Width>360</Width>
+      <Height>360</Height>
+      <PosX>12</PosX>
+      <PosY>180</PosY>
+      <VisibleCondition>IsControlVisible(8) ++ IsMediaPortalListLayout(Vertical)</VisibleCondition>
+      <IsWindowOpenVisible>false</IsWindowOpenVisible>
+      <Animations>
+        <Animation x:type="Zoom" Condition="VisibleTrue" Duration="500" Easing="EaseInOut" />
+        <Animation x:type="Zoom" Condition="VisibleFalse" Duration="500" Easing="EaseInOut" From="100" To="0" />
+      </Animations>
+      <MediaPortalFocusControls />
+      <ImageStyle StyleId="Empty" />
+      <Image>#MPD.Thumb</Image>
+      <ImageStretch>Uniform</ImageStretch>
+      <ImageCornerRadius>15</ImageCornerRadius>
+      <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+    </Control>
+  </WindowControls>
+</Window>

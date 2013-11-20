@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Dialog xmlns:x="http://www.w3.org/2001/XMLSchema-instance" x:type="MediaPortalDialog">
+  <Name>Notify</Name>
+  <Id>2016</Id>
+  <Width>768</Width>
+  <Height>549</Height>
+  <PosX>256</PosX>
+  <PosY>85</PosY>
+  <BackgroundBrush />
+  <DialogAnimations />
+  <DialogControls>
+    <Control x:type="Image">
+      <Name>Background</Name>
+      <Id>4</Id>
+      <Width>768</Width>
+      <Height>549</Height>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ImageStyle StyleId="Dialog Background" />
+      <ImageStretch>None</ImageStretch>
+      <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+    </Control>
+    <Control x:type="Label">
+      <Name>Dialog Title</Name>
+      <Id>1</Id>
+      <Width>526</Width>
+      <Height>70</Height>
+      <PosX>119</PosX>
+      <PosY>64</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <LabelStyle StyleId="Dialog Title" />
+      <LabelText>#Dialog.Label4</LabelText>
+      <IsScrollingEnabled>false</IsScrollingEnabled>
+      <ScrollSpeed>2</ScrollSpeed>
+      <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+    </Control>
+    <Control x:type="Label">
+      <Name>Dialog</Name>
+      <Id>3</Id>
+      <Width>619</Width>
+      <Height>283</Height>
+      <PosX>74</PosX>
+      <PosY>125</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <LabelStyle StyleId="Dialog Text" />
+      <LabelText>#Dialog.Label5</LabelText>
+      <IsVertical>true</IsVertical>
+      <IsScrollingEnabled>false</IsScrollingEnabled>
+      <ScrollSpeed>2</ScrollSpeed>
+      <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+    </Control>
+  </DialogControls>
+  <VisibleCondition>IsMediaPortalDialog(2016)</VisibleCondition>
+</Dialog>
