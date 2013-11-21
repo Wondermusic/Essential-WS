@@ -140,7 +140,7 @@
       <GlossBrush />
     </ControlStyle>
     <ControlStyle x:type="GroupStyle" StyleId="Now Playing Video">
-      <BorderThickness>5,5,5,0</BorderThickness>
+      <BorderThickness>0,5,5,0</BorderThickness>
       <CornerRadius>0,20,0,0</CornerRadius>
       <BackgroundBrush x:type="GradientBrush">
         <Angle>Vertical</Angle>
