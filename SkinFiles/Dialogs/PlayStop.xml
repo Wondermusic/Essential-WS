@@ -122,11 +122,11 @@
         <NoFocusBrush />
         <NoFocusBorderBrush />
         <FocusBrush x:type="GradientBrush">
-          <Angle>Vertical</Angle>
           <GradientStops>
             <GradientStop Color="#C8AFD5F2" Offset="0" />
             <GradientStop Color="#C83E79A5" Offset="0.669" />
           </GradientStops>
+          <Angle>Vertical</Angle>
         </FocusBrush>
         <FocusBorderBrush />
         <ShadeBrush />

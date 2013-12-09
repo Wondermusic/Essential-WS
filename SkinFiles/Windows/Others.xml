@@ -47,18 +47,18 @@
             <BorderThickness>5,5,5,5</BorderThickness>
             <CornerRadius>20,20,0,0</CornerRadius>
             <BackgroundBrush x:type="GradientBrush">
-              <Angle>Vertical</Angle>
               <GradientStops>
                 <GradientStop Color="#B4000000" Offset="0" />
                 <GradientStop Color="#96000000" Offset="0.576" />
               </GradientStops>
+              <Angle>Vertical</Angle>
             </BackgroundBrush>
             <BorderBrush x:type="GradientBrush">
-              <Angle>Vertical</Angle>
               <GradientStops>
                 <GradientStop Color="#FF515252" Offset="0" />
                 <GradientStop Color="#89525353" Offset="1" />
               </GradientStops>
+              <Angle>Vertical</Angle>
             </BorderBrush>
             <GlossBrush />
           </GroupStyle>
@@ -134,18 +134,18 @@
             <BorderThickness>5,5,0,5</BorderThickness>
             <CornerRadius>20,0,0,20</CornerRadius>
             <BackgroundBrush x:type="GradientBrush">
-              <Angle>Vertical</Angle>
               <GradientStops>
                 <GradientStop Color="#B4000000" Offset="0" />
                 <GradientStop Color="#96000000" Offset="0.576" />
               </GradientStops>
+              <Angle>Vertical</Angle>
             </BackgroundBrush>
             <BorderBrush x:type="GradientBrush">
-              <Angle>Vertical</Angle>
               <GradientStops>
                 <GradientStop Color="#FF515252" Offset="0" />
                 <GradientStop Color="#89525353" Offset="1" />
               </GradientStops>
+              <Angle>Vertical</Angle>
             </BorderBrush>
             <GlossBrush />
           </GroupStyle>
@@ -184,7 +184,7 @@
           <ImageStyle>
             <BorderThickness>2,2,2,2</BorderThickness>
             <CornerRadius>15,15,15,15</CornerRadius>
-            <BackgroundBrush x:type="ImageBrush" Image="\Video\defaultVideoBig.png" Stretch="Uniform" />
+            <BackgroundBrush />
             <BorderBrush x:type="ColorBrush" Color="#FF000000" />
           </ImageStyle>
           <Image>#Emulators2.CurrentItem.coverpath</Image>

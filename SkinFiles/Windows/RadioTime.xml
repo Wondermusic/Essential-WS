@@ -50,19 +50,19 @@
             <BackgroundBrush />
             <BorderBrush />
             <LowRangeColor x:type="GradientBrush">
-              <Angle>Vertical</Angle>
               <GradientStops>
                 <GradientStop Color="#50000000" Offset="1" />
                 <GradientStop Color="#507DFF00" Offset="0.237" />
                 <GradientStop Color="#50FFFF00" Offset="0" />
               </GradientStops>
+              <Angle>Vertical</Angle>
             </LowRangeColor>
             <MedRangeColor x:type="GradientBrush">
-              <Angle>Vertical</Angle>
               <GradientStops>
                 <GradientStop Color="#50FFFF00" Offset="0.468" />
                 <GradientStop Color="#50FF0004" Offset="0" />
               </GradientStops>
+              <Angle>Vertical</Angle>
             </MedRangeColor>
             <MaxRangeColor x:type="ColorBrush" Color="#50FF0004" />
             <BandBorderColor />

@@ -96,19 +96,19 @@
             <BackgroundBrush />
             <BorderBrush x:type="ColorBrush" Color="#FF00BFFF" />
             <LowRangeColor x:type="GradientBrush">
-              <Angle>Vertical</Angle>
               <GradientStops>
                 <GradientStop Color="#FF000000" Offset="1" />
                 <GradientStop Color="#FF7FFF00" Offset="0.237" />
                 <GradientStop Color="#FFFFFF00" Offset="0" />
               </GradientStops>
+              <Angle>Vertical</Angle>
             </LowRangeColor>
             <MedRangeColor x:type="GradientBrush">
-              <Angle>Vertical</Angle>
               <GradientStops>
                 <GradientStop Color="#FFFFFF00" Offset="0.468" />
                 <GradientStop Color="#FFFF0000" Offset="0" />
               </GradientStops>
+              <Angle>Vertical</Angle>
             </MedRangeColor>
             <MaxRangeColor x:type="ColorBrush" Color="#FFFF0000" />
             <BandBorderColor x:type="ColorBrush" Color="#FF00BFFF" />
@@ -136,22 +136,22 @@
             <BackgroundBrush x:type="ColorBrush" Color="#FF000000" />
             <BorderBrush x:type="ColorBrush" Color="#FFC0C0C0" />
             <ShadeBrush x:type="GradientBrush">
-              <Angle>Vertical</Angle>
               <GradientStops>
                 <GradientStop Color="#00000000" Offset="0" />
                 <GradientStop Color="#FF000000" Offset="1" />
               </GradientStops>
+              <Angle>Vertical</Angle>
             </ShadeBrush>
             <BarMargin>2,2,2,2</BarMargin>
             <BarBorderThickness>1,1,1,1</BarBorderThickness>
             <BarCornerRadius>3,3,3,3</BarCornerRadius>
             <BarBorderBrush x:type="ColorBrush" Color="#FFC0C0C0" />
             <BarBackgroundBrush x:type="GradientBrush">
-              <Angle>Vertical</Angle>
               <GradientStops>
                 <GradientStop Color="#FF00BFFF" Offset="0.563" />
                 <GradientStop Color="#FF1294BF" Offset="1" />
               </GradientStops>
+              <Angle>Vertical</Angle>
             </BarBackgroundBrush>
           </ProgressBarStyle>
           <ProgressValue>#percentage</ProgressValue>

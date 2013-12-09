@@ -37,18 +37,18 @@
         <BorderThickness>5,5,0,5</BorderThickness>
         <CornerRadius>20,0,0,20</CornerRadius>
         <BackgroundBrush x:type="GradientBrush">
-          <Angle>Vertical</Angle>
           <GradientStops>
             <GradientStop Color="#B4000000" Offset="0" />
             <GradientStop Color="#96000000" Offset="0.576" />
           </GradientStops>
+          <Angle>Vertical</Angle>
         </BackgroundBrush>
         <BorderBrush x:type="GradientBrush">
-          <Angle>Vertical</Angle>
           <GradientStops>
             <GradientStop Color="#FF515252" Offset="0" />
             <GradientStop Color="#89525353" Offset="1" />
           </GradientStops>
+          <Angle>Vertical</Angle>
         </BorderBrush>
         <GlossBrush />
       </GroupStyle>
@@ -69,19 +69,19 @@
             <BackgroundBrush />
             <BorderBrush />
             <LowRangeColor x:type="GradientBrush">
-              <Angle>Vertical</Angle>
               <GradientStops>
                 <GradientStop Color="#50000000" Offset="1" />
                 <GradientStop Color="#507DFF00" Offset="0.237" />
                 <GradientStop Color="#50FFFF00" Offset="0" />
               </GradientStops>
+              <Angle>Vertical</Angle>
             </LowRangeColor>
             <MedRangeColor x:type="GradientBrush">
-              <Angle>Vertical</Angle>
               <GradientStops>
                 <GradientStop Color="#50FFFF00" Offset="0.468" />
                 <GradientStop Color="#50FF0004" Offset="0" />
               </GradientStops>
+              <Angle>Vertical</Angle>
             </MedRangeColor>
             <MaxRangeColor x:type="ColorBrush" Color="#50FF0004" />
             <BandBorderColor />

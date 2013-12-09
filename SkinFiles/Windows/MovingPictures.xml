@@ -101,22 +101,22 @@
             <BackgroundBrush />
             <BorderBrush x:type="ColorBrush" Color="#FFC0C0C0" />
             <ShadeBrush x:type="GradientBrush">
-              <Angle>Vertical</Angle>
               <GradientStops>
                 <GradientStop Color="#00000000" Offset="0" />
                 <GradientStop Color="#FF000000" Offset="1" />
               </GradientStops>
+              <Angle>Vertical</Angle>
             </ShadeBrush>
             <BarMargin>2,2,2,2</BarMargin>
             <BarBorderThickness>0,0,0,0</BarBorderThickness>
             <BarCornerRadius>15,15,15,15</BarCornerRadius>
             <BarBorderBrush x:type="ColorBrush" Color="#FFC0C0C0" />
             <BarBackgroundBrush x:type="GradientBrush">
-              <Angle>Vertical</Angle>
               <GradientStops>
                 <GradientStop Color="#FF0000FF" Offset="0" />
                 <GradientStop Color="#FF00008B" Offset="1" />
               </GradientStops>
+              <Angle>Vertical</Angle>
             </BarBackgroundBrush>
           </ProgressBarStyle>
           <ProgressValue>#percentage</ProgressValue>

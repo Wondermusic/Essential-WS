@@ -128,7 +128,7 @@
       <Height>622</Height>
       <PosX>85</PosX>
       <PosY>35</PosY>
-      <VisibleCondition>IsMediaPortalListLayout(Horizontal) || IsMediaPortalListLayout(CoverFlow)</VisibleCondition>
+      <VisibleCondition>IsControlVisible(8) ++ (IsMediaPortalListLayout(Horizontal) || IsMediaPortalListLayout(CoverFlow))</VisibleCondition>
       <IsWindowOpenVisible>false</IsWindowOpenVisible>
       <Animations>
         <Animation x:type="Slide" Condition="VisibleTrue" Duration="300" Easing="EaseInOut" StartX="85" StartY="720" EndX="85" EndY="35" />

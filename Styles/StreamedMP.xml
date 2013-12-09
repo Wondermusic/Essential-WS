@@ -379,5 +379,25 @@
       <SelectionZoomY>150</SelectionZoomY>
       <SelectionZoomDuration>200</SelectionZoomDuration>
     </ControlStyle>
+    <ControlStyle x:type="ListItemStyle" StyleId="Home Horizontal">
+      <BorderThickness>1,1,1,1</BorderThickness>
+      <CornerRadius>4,4,4,4</CornerRadius>
+      <NoFocusBrush />
+      <NoFocusBorderBrush />
+      <FocusBrush />
+      <FocusBorderBrush />
+      <FontType>Titan</FontType>
+      <FontSize>35</FontSize>
+      <FocusFontBrush x:type="ColorBrush" Color="#FFFFFAFA" />
+      <NoFocusFontBrush x:type="ColorBrush" Color="#FFF8F8FF" />
+      <LabelMargin>3,3,3,3</LabelMargin>
+      <ImageCornerRadius>10</ImageCornerRadius>
+      <Width>254</Width>
+      <Height>100</Height>
+      <ItemMargin>1,1,1,1</ItemMargin>
+      <SelectionZoomX>150</SelectionZoomX>
+      <SelectionZoomY>150</SelectionZoomY>
+      <SelectionZoomDuration>200</SelectionZoomDuration>
+    </ControlStyle>
   </ControlStyles>
 </StyleCollection>

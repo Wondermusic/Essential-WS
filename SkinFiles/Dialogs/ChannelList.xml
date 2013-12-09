@@ -51,7 +51,7 @@
         <BorderThickness>0,0,0,0</BorderThickness>
         <CornerRadius>0,0,0,0</CornerRadius>
       </ListControlStyle>
-      <ListType>MediaPortalMenuControl</ListType>
+      <ListType>MediaPortalDialogList</ListType>
       <ListLayout>Auto</ListLayout>
       <VerticalItemStyle StyleId="Dialog" />
       <HorizontalItemStyle>
