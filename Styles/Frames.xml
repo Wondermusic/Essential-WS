@@ -351,6 +351,24 @@
       <SelectionZoomY>150</SelectionZoomY>
       <SelectionZoomDuration>200</SelectionZoomDuration>
     </ControlStyle>
+    <ControlStyle x:type="ListItemStyle" StyleId="Home Vertical">
+      <NoFocusBrush />
+      <NoFocusBorderBrush />
+      <FocusBrush x:type="ImageBrush" Image="\Dialogs\aMPed\ledon.png" Stretch="Uniform" />
+      <FocusBorderBrush />
+      <FontType>Verdana</FontType>
+      <FontSize>50</FontSize>
+      <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+      <NoFocusFontBrush x:type="ColorBrush" Color="#FF4682B4" />
+      <LabelMargin>10,0,0,0</LabelMargin>
+      <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
+      <ImageHorizontalAlignment>Left</ImageHorizontalAlignment>
+      <ImageCornerRadius>5</ImageCornerRadius>
+      <Width>800</Width>
+      <Height>80</Height>
+      <HorizontalAlignment>Right</HorizontalAlignment>
+      <SelectionZoomDuration>100</SelectionZoomDuration>
+    </ControlStyle>
     <ControlStyle x:type="ListItemStyle" StyleId="Home Horizontal">
       <BorderThickness>1,1,1,1</BorderThickness>
       <CornerRadius>4,4,4,4</CornerRadius>
@@ -361,14 +379,15 @@
       <FontType>Titan</FontType>
       <FontSize>35</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FFFFFAFA" />
-      <NoFocusFontBrush x:type="ColorBrush" Color="#FFF8F8FF" />
+      <NoFocusFontBrush x:type="ColorBrush" Color="#FF708090" />
       <LabelMargin>3,3,3,3</LabelMargin>
       <ImageCornerRadius>10</ImageCornerRadius>
       <Width>254</Width>
       <Height>100</Height>
       <ItemMargin>1,1,1,1</ItemMargin>
-      <SelectionZoomX>150</SelectionZoomX>
-      <SelectionZoomY>150</SelectionZoomY>
+      <VerticalAlignment>Bottom</VerticalAlignment>
+      <SelectionZoomX>140</SelectionZoomX>
+      <SelectionZoomY>140</SelectionZoomY>
       <SelectionZoomDuration>200</SelectionZoomDuration>
     </ControlStyle>
   </ControlStyles>

@@ -371,6 +371,34 @@
       <SelectionZoomY>150</SelectionZoomY>
       <SelectionZoomDuration>200</SelectionZoomDuration>
     </ControlStyle>
+    <ControlStyle x:type="ListItemStyle" StyleId="Home Vertical">
+      <NoFocusBrush />
+      <NoFocusBorderBrush />
+      <FocusBrush x:type="GradientBrush">
+        <Angle>Horizontal</Angle>
+        <GradientStops>
+          <GradientStop Color="#63000000" Offset="0" />
+          <GradientStop Color="#6400B7FF" Offset="0.014" />
+          <GradientStop Color="#6400B7FF" Offset="0.065" />
+          <GradientStop Color="#6400B7FF" Offset="0.086" />
+          <GradientStop Color="#8400B7FF" Offset="0.209" />
+          <GradientStop Color="#1A00B7FF" Offset="1" />
+        </GradientStops>
+      </FocusBrush>
+      <FocusBorderBrush />
+      <FontType>Verdana</FontType>
+      <FontSize>50</FontSize>
+      <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+      <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+      <LabelMargin>10,0,0,0</LabelMargin>
+      <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
+      <ImageHorizontalAlignment>Left</ImageHorizontalAlignment>
+      <ImageCornerRadius>5</ImageCornerRadius>
+      <Width>800</Width>
+      <Height>80</Height>
+      <HorizontalAlignment>Right</HorizontalAlignment>
+      <SelectionZoomDuration>100</SelectionZoomDuration>
+    </ControlStyle>
     <ControlStyle x:type="ListItemStyle" StyleId="Home Horizontal">
       <BorderThickness>1,1,1,1</BorderThickness>
       <CornerRadius>4,4,4,4</CornerRadius>
@@ -381,14 +409,15 @@
       <FontType>Titan</FontType>
       <FontSize>35</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FFFFFAFA" />
-      <NoFocusFontBrush x:type="ColorBrush" Color="#FFD3D3D3" />
+      <NoFocusFontBrush x:type="ColorBrush" Color="#FF708090" />
       <LabelMargin>3,3,3,3</LabelMargin>
       <ImageCornerRadius>10</ImageCornerRadius>
       <Width>254</Width>
       <Height>100</Height>
       <ItemMargin>1,1,1,1</ItemMargin>
-      <SelectionZoomX>150</SelectionZoomX>
-      <SelectionZoomY>150</SelectionZoomY>
+      <VerticalAlignment>Bottom</VerticalAlignment>
+      <SelectionZoomX>140</SelectionZoomX>
+      <SelectionZoomY>140</SelectionZoomY>
       <SelectionZoomDuration>200</SelectionZoomDuration>
     </ControlStyle>
   </ControlStyles>

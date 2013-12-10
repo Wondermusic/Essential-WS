@@ -25,7 +25,7 @@
       <Id>2</Id>
       <Width>1280</Width>
       <Height>720</Height>
-      <VisibleCondition>!IsControlVisible(8)</VisibleCondition>
+      <VisibleCondition>!IsControlVisible(10) ++ !IsControlVisible(11)</VisibleCondition>
       <Animations>
         <Animation x:type="Zoom" Condition="VisibleTrue" Duration="200" Easing="EaseInOut" />
         <Animation x:type="Zoom" Condition="VisibleFalse" Duration="200" Easing="EaseInOut" From="100" To="0" />
@@ -69,7 +69,7 @@
           <Name>Date</Name>
           <Id>5</Id>
           <Width>590</Width>
-          <Height>80</Height>
+          <Height>90</Height>
           <PosX>345</PosX>
           <PosY>408</PosY>
           <VisibleCondition />
@@ -90,7 +90,7 @@
       <Width>1280</Width>
       <Height>70</Height>
       <PosY>650</PosY>
-      <VisibleCondition />
+      <VisibleCondition>IsMediaPortalWindow(35) || (IsControlVisible(8) ++ IsMediaPortalListLayout(Horizontal)) || (IsControlVisible(8) ++ IsMediaPortalListLayout(CoverFlow))</VisibleCondition>
       <Animations>
         <Animation x:type="Rotate" Condition="PropertyChanging" Duration="300" Pos3DXTo="90" />
         <Animation x:type="Rotate" Condition="PropertyChanged" Duration="300" Pos3DXFrom="-90" />
@@ -110,7 +110,7 @@
       <Height>606</Height>
       <PosX>382</PosX>
       <PosY>35</PosY>
-      <VisibleCondition>IsControlVisible(8) ++ IsMediaPortalListLayout(Vertical)</VisibleCondition>
+      <VisibleCondition>IsControlVisible(8)</VisibleCondition>
       <IsWindowOpenVisible>false</IsWindowOpenVisible>
       <Animations>
         <Animation x:type="Slide" Condition="VisibleTrue" Duration="300" Easing="EaseInOut" StartX="382" StartY="720" EndX="382" EndY="35" />
@@ -140,13 +140,13 @@
       <BackgroundBrush x:type="ColorBrush" Color="#BE000000" />
     </Control>
     <Control x:type="List">
-      <Name>List</Name>
+      <Name>Menu List</Name>
       <Id>8</Id>
       <Width>1100</Width>
       <Height>600</Height>
       <PosX>86</PosX>
       <PosY>37</PosY>
-      <VisibleCondition>IsMediaPortalControlFocused(50) || IsMediaPortalControlFocused(51)</VisibleCondition>
+      <VisibleCondition>(!IsControlVisible(12) || !IsControlVisible(13)) ++ (IsMediaPortalControlFocused(50) || IsMediaPortalControlFocused(51))</VisibleCondition>
       <IsWindowOpenVisible>false</IsWindowOpenVisible>
       <Animations>
         <Animation x:type="Slide" Condition="VisibleTrue" Duration="300" Delay="100" Easing="EaseInOut" StartX="86" StartY="720" EndX="86" EndY="37" />
@@ -164,6 +164,50 @@
       <HorizontalItemStyle StyleId="Horizontal" />
       <CoverFlowItemStyle StyleId="CoverFlow" />
     </Control>
+    <Control x:type="List">
+      <Name>Vertical List</Name>
+      <Id>12</Id>
+      <Width>1100</Width>
+      <Height>600</Height>
+      <PosX>86</PosX>
+      <PosY>37</PosY>
+      <VisibleCondition>(IsMediaPortalWindow(0) || IsMediaPortalWindow(34) || IsMediaPortalWindow(35)) ++ IsSkinOptionEnabled(Default)</VisibleCondition>
+      <IsWindowOpenVisible>false</IsWindowOpenVisible>
+      <Animations />
+      <MediaPortalFocusControls />
+      <ListControlStyle>
+        <BorderThickness>0,0,0,0</BorderThickness>
+        <CornerRadius>0,0,0,0</CornerRadius>
+        <BackgroundBrush />
+      </ListControlStyle>
+      <ListType>MediaPortalMenuControl</ListType>
+      <ListLayout>Auto</ListLayout>
+      <VerticalItemStyle StyleId="Home Vertical" />
+      <HorizontalItemStyle StyleId="Horizontal" />
+      <CoverFlowItemStyle StyleId="CoverFlow" />
+    </Control>
+    <Control x:type="List">
+      <Name>Horizontal List</Name>
+      <Id>13</Id>
+      <Width>1100</Width>
+      <Height>600</Height>
+      <PosX>86</PosX>
+      <PosY>37</PosY>
+      <VisibleCondition>(IsMediaPortalWindow(0) || IsMediaPortalWindow(34) || IsMediaPortalWindow(35)) ++ IsSkinOptionEnabled(Horizontal)</VisibleCondition>
+      <IsWindowOpenVisible>false</IsWindowOpenVisible>
+      <Animations />
+      <MediaPortalFocusControls />
+      <ListControlStyle>
+        <BorderThickness>0,0,0,0</BorderThickness>
+        <CornerRadius>0,0,0,0</CornerRadius>
+        <BackgroundBrush />
+      </ListControlStyle>
+      <ListType>MediaPortalMenuControl</ListType>
+      <ListLayout>Horizontal</ListLayout>
+      <VerticalItemStyle StyleId="Vertical" />
+      <HorizontalItemStyle StyleId="Home Horizontal" />
+      <CoverFlowItemStyle StyleId="CoverFlow" />
+    </Control>
     <Control x:type="Image">
       <Name>Image</Name>
       <Id>9</Id>
@@ -171,7 +215,7 @@
       <Height>360</Height>
       <PosX>12</PosX>
       <PosY>180</PosY>
-      <VisibleCondition>IsControlVisible(8) ++ IsMediaPortalListLayout(Vertical)</VisibleCondition>
+      <VisibleCondition>IsControlVisible(8) ++ IsMediaPortalListLayout(Vertical) ++ IsControlVisible(10)</VisibleCondition>
       <IsWindowOpenVisible>false</IsWindowOpenVisible>
       <Animations>
         <Animation x:type="Zoom" Condition="VisibleTrue" Duration="500" Easing="EaseInOut" />
