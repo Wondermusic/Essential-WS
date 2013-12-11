@@ -102,8 +102,8 @@
       </BarBackgroundBrush>
     </ControlStyle>
     <ControlStyle x:type="GroupStyle" StyleId="Standard NowPlaying">
-      <BorderThickness>5,5,5,0</BorderThickness>
-      <CornerRadius>20,20,0,0</CornerRadius>
+      <BorderThickness>5,5,0,0</BorderThickness>
+      <CornerRadius>20,0,0,0</CornerRadius>
       <BackgroundBrush x:type="GradientBrush">
         <Angle>Vertical</Angle>
         <GradientStops>

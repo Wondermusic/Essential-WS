@@ -98,7 +98,7 @@
       </BarBackgroundBrush>
     </ControlStyle>
     <ControlStyle x:type="GroupStyle" StyleId="Standard NowPlaying">
-      <BorderThickness>5,5,5,0</BorderThickness>
+      <BorderThickness>5,5,0,0</BorderThickness>
       <CornerRadius>20,0,0,0</CornerRadius>
       <BackgroundBrush x:type="GradientBrush">
         <Angle>Vertical</Angle>
@@ -354,17 +354,16 @@
     <ControlStyle x:type="ListItemStyle" StyleId="Home Vertical">
       <NoFocusBrush />
       <NoFocusBorderBrush />
-      <FocusBrush x:type="ImageBrush" Image="\Dialogs\aMPed\ledon.png" Stretch="Uniform" />
+      <FocusBrush />
       <FocusBorderBrush />
-      <FontType>Verdana</FontType>
       <FontSize>50</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
-      <NoFocusFontBrush x:type="ColorBrush" Color="#FF4682B4" />
+      <NoFocusFontBrush x:type="ColorBrush" Color="#FF4582B4" />
       <LabelMargin>10,0,0,0</LabelMargin>
       <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
       <ImageHorizontalAlignment>Left</ImageHorizontalAlignment>
       <ImageCornerRadius>5</ImageCornerRadius>
-      <Width>800</Width>
+      <Width>600</Width>
       <Height>80</Height>
       <HorizontalAlignment>Right</HorizontalAlignment>
       <SelectionZoomDuration>100</SelectionZoomDuration>
@@ -376,7 +375,7 @@
       <NoFocusBorderBrush />
       <FocusBrush />
       <FocusBorderBrush />
-      <FontType>Titan</FontType>
+      <EnableLabel>false</EnableLabel>
       <FontSize>35</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FFFFFAFA" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FF708090" />

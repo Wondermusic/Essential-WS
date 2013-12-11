@@ -102,8 +102,8 @@
       </BarBackgroundBrush>
     </ControlStyle>
     <ControlStyle x:type="GroupStyle" StyleId="Standard NowPlaying">
-      <BorderThickness>5,5,5,0</BorderThickness>
-      <CornerRadius>20,20,0,0</CornerRadius>
+      <BorderThickness>5,5,0,0</BorderThickness>
+      <CornerRadius>20,0,0,0</CornerRadius>
       <BackgroundBrush x:type="GradientBrush">
         <Angle>Vertical</Angle>
         <GradientStops>
@@ -365,7 +365,7 @@
       <FocusBrush />
       <FocusBorderBrush />
       <EnableLabel>false</EnableLabel>
-      <FontType>Titan</FontType>
+      <FontType>Fluid Title Caps</FontType>
       <FocusFontBrush x:type="ColorBrush" Color="#FFFFFAFA" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FFF8F8FF" />
       <LabelMargin>3,3,3,3</LabelMargin>
@@ -404,7 +404,8 @@
       <NoFocusBorderBrush />
       <FocusBrush />
       <FocusBorderBrush />
-      <FontType>Titan</FontType>
+      <EnableLabel>false</EnableLabel>
+      <FontType>Fluid Title Caps</FontType>
       <FontSize>35</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FFFFFAFA" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FF708090" />

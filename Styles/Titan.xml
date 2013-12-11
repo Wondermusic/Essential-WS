@@ -374,18 +374,9 @@
     <ControlStyle x:type="ListItemStyle" StyleId="Home Vertical">
       <NoFocusBrush />
       <NoFocusBorderBrush />
-      <FocusBrush x:type="GradientBrush">
-        <Angle>Horizontal</Angle>
-        <GradientStops>
-          <GradientStop Color="#63000000" Offset="0" />
-          <GradientStop Color="#6400B7FF" Offset="0.014" />
-          <GradientStop Color="#6400B7FF" Offset="0.065" />
-          <GradientStop Color="#6400B7FF" Offset="0.086" />
-          <GradientStop Color="#8400B7FF" Offset="0.209" />
-          <GradientStop Color="#1A00B7FF" Offset="1" />
-        </GradientStops>
-      </FocusBrush>
+      <FocusBrush />
       <FocusBorderBrush />
+      <EnableLabel>false</EnableLabel>
       <FontType>Verdana</FontType>
       <FontSize>50</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
@@ -394,7 +385,7 @@
       <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
       <ImageHorizontalAlignment>Left</ImageHorizontalAlignment>
       <ImageCornerRadius>5</ImageCornerRadius>
-      <Width>800</Width>
+      <Width>600</Width>
       <Height>80</Height>
       <HorizontalAlignment>Right</HorizontalAlignment>
       <SelectionZoomDuration>100</SelectionZoomDuration>

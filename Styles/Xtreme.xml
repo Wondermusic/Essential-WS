@@ -102,8 +102,8 @@
       </BarBackgroundBrush>
     </ControlStyle>
     <ControlStyle x:type="GroupStyle" StyleId="Standard NowPlaying">
-      <BorderThickness>5,5,5,0</BorderThickness>
-      <CornerRadius>20,20,0,0</CornerRadius>
+      <BorderThickness>5,5,0,0</BorderThickness>
+      <CornerRadius>20,0,0,0</CornerRadius>
       <BackgroundBrush x:type="GradientBrush">
         <Angle>Vertical</Angle>
         <GradientStops>
@@ -348,17 +348,17 @@
     <ControlStyle x:type="ListItemStyle" StyleId="Home Vertical">
       <NoFocusBrush />
       <NoFocusBorderBrush />
-      <FocusBrush x:type="ImageBrush" Image="\Dialogs\aMPed\ledon.png" Stretch="Uniform" />
+      <FocusBrush x:type="ImageBrush" Image="\Dialogs\Xtreme\ForecastBackdrop.png" Stretch="Fill" />
       <FocusBorderBrush />
-      <FontType>Verdana</FontType>
+      <FontType>Fluid Title Caps</FontType>
       <FontSize>50</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
-      <NoFocusFontBrush x:type="ColorBrush" Color="#FF4682B4" />
+      <NoFocusFontBrush x:type="ColorBrush" Color="#FFC0C0C0" />
       <LabelMargin>10,0,0,0</LabelMargin>
       <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
       <ImageHorizontalAlignment>Left</ImageHorizontalAlignment>
       <ImageCornerRadius>5</ImageCornerRadius>
-      <Width>800</Width>
+      <Width>600</Width>
       <Height>80</Height>
       <HorizontalAlignment>Right</HorizontalAlignment>
       <SelectionZoomDuration>100</SelectionZoomDuration>
@@ -370,7 +370,8 @@
       <NoFocusBorderBrush />
       <FocusBrush />
       <FocusBorderBrush />
-      <FontType>Titan</FontType>
+      <EnableLabel>false</EnableLabel>
+      <FontType>Franklin Gothic</FontType>
       <FontSize>35</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FFFFFAFA" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FF708090" />

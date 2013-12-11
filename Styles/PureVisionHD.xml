@@ -102,8 +102,8 @@
       </BarBackgroundBrush>
     </ControlStyle>
     <ControlStyle x:type="GroupStyle" StyleId="Standard NowPlaying">
-      <BorderThickness>5,5,5,0</BorderThickness>
-      <CornerRadius>20,20,0,0</CornerRadius>
+      <BorderThickness>5,5,0,0</BorderThickness>
+      <CornerRadius>20,0,0,0</CornerRadius>
       <BackgroundBrush x:type="GradientBrush">
         <Angle>Vertical</Angle>
         <GradientStops>
@@ -187,7 +187,7 @@
         <GradientStops>
           <GradientStop Color="#96A7C6E4" Offset="0" />
           <GradientStop Color="#965293D5" Offset="0.492" />
-          <GradientStop Color="#962570D1" Offset="0.504" />
+          <GradientStop Color="#96256FD1" Offset="0.504" />
           <GradientStop Color="#96002A60" Offset="1" />
         </GradientStops>
       </FocusBrush>
@@ -389,19 +389,28 @@
       <SelectionZoomDuration>200</SelectionZoomDuration>
     </ControlStyle>
     <ControlStyle x:type="ListItemStyle" StyleId="Home Vertical">
+      <CornerRadius>5,5,5,5</CornerRadius>
       <NoFocusBrush />
       <NoFocusBorderBrush />
-      <FocusBrush x:type="ImageBrush" Image="\Dialogs\aMPed\ledon.png" Stretch="Uniform" />
+      <FocusBrush x:type="GradientBrush">
+        <Angle>Vertical</Angle>
+        <GradientStops>
+          <GradientStop Color="#96A7C6E4" Offset="0" />
+          <GradientStop Color="#965293D5" Offset="0.489" />
+          <GradientStop Color="#96256FD1" Offset="0.511" />
+          <GradientStop Color="#96002A60" Offset="1" />
+        </GradientStops>
+      </FocusBrush>
       <FocusBorderBrush />
-      <FontType>Verdana</FontType>
+      <FontType>Wolf Sans</FontType>
       <FontSize>50</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
-      <NoFocusFontBrush x:type="ColorBrush" Color="#FF4682B4" />
+      <NoFocusFontBrush x:type="ColorBrush" Color="#FFD3D3D3" />
       <LabelMargin>10,0,0,0</LabelMargin>
       <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
       <ImageHorizontalAlignment>Left</ImageHorizontalAlignment>
       <ImageCornerRadius>5</ImageCornerRadius>
-      <Width>800</Width>
+      <Width>600</Width>
       <Height>80</Height>
       <HorizontalAlignment>Right</HorizontalAlignment>
       <SelectionZoomDuration>100</SelectionZoomDuration>
@@ -413,7 +422,8 @@
       <NoFocusBorderBrush />
       <FocusBrush />
       <FocusBorderBrush />
-      <FontType>Titan</FontType>
+      <EnableLabel>false</EnableLabel>
+      <FontType>Wolf Sans</FontType>
       <FontSize>35</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FFFFFAFA" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FF708090" />
