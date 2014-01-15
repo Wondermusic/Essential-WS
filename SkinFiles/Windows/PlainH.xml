@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Window xmlns:x="http://www.w3.org/2001/XMLSchema-instance" x:type="MediaPortalWindow">
-  <IsDefault>true</IsDefault>
+  <IsDefault>false</IsDefault>
   <Width>1280</Width>
   <Height>720</Height>
-  <Name>Plain</Name>
-  <Id>0</Id>
+  <Name>PlainH</Name>
+  <Id>16</Id>
   <BackgroundBrush />
   <WindowAnimations />
   <WindowControls>
@@ -25,7 +25,7 @@
       <Id>2</Id>
       <Width>1280</Width>
       <Height>720</Height>
-      <VisibleCondition>!IsControlVisible(10) ++ !IsControlVisible(11) ++ !IsControlVisible(13)</VisibleCondition>
+      <VisibleCondition>!IsControlVisible(10) ++ !IsControlVisible(11)</VisibleCondition>
       <Animations>
         <Animation x:type="Zoom" Condition="VisibleTrue" Duration="200" Easing="EaseInOut" />
         <Animation x:type="Zoom" Condition="VisibleFalse" Duration="200" Easing="EaseInOut" From="100" To="0" />
@@ -35,7 +35,7 @@
       <GroupControls>
         <Control x:type="Rectangle">
           <Name>NewRectangle</Name>
-          <Id>6</Id>
+          <Id>3</Id>
           <Width>800</Width>
           <Height>200</Height>
           <PosX>240</PosX>
@@ -86,7 +86,7 @@
     </Control>
     <Control x:type="Label">
       <Name>CurrentModule</Name>
-      <Id>7</Id>
+      <Id>6</Id>
       <Width>1280</Width>
       <Height>70</Height>
       <PosY>650</PosY>
@@ -105,12 +105,12 @@
     </Control>
     <Control x:type="Rectangle">
       <Name>Rectangle</Name>
-      <Id>10</Id>
+      <Id>7</Id>
       <Width>803</Width>
       <Height>606</Height>
       <PosX>382</PosX>
       <PosY>35</PosY>
-      <VisibleCondition>IsControlVisible(8)</VisibleCondition>
+      <VisibleCondition>(!IsMediaPortalWindow(0) || !IsMediaPortalWindow(34)) ++ IsControlVisible(8)</VisibleCondition>
       <IsWindowOpenVisible>false</IsWindowOpenVisible>
       <Animations>
         <Animation x:type="Slide" Condition="VisibleTrue" Duration="300" Easing="EaseInOut" StartX="382" StartY="720" EndX="382" EndY="35" />
@@ -123,7 +123,7 @@
     </Control>
     <Control x:type="Rectangle">
       <Name>Rectangle</Name>
-      <Id>11</Id>
+      <Id>8</Id>
       <Width>1103</Width>
       <Height>622</Height>
       <PosX>85</PosX>
@@ -141,12 +141,12 @@
     </Control>
     <Control x:type="List">
       <Name>Menu List</Name>
-      <Id>8</Id>
+      <Id>9</Id>
       <Width>1100</Width>
       <Height>600</Height>
       <PosX>86</PosX>
       <PosY>37</PosY>
-      <VisibleCondition>!IsControlVisible(12) ++ (IsMediaPortalControlFocused(50) || IsMediaPortalControlFocused(51))</VisibleCondition>
+      <VisibleCondition>!IsControlVisible(10) ++ (IsMediaPortalControlFocused(50) || IsMediaPortalControlFocused(51))</VisibleCondition>
       <IsWindowOpenVisible>false</IsWindowOpenVisible>
       <Animations>
         <Animation x:type="Slide" Condition="VisibleTrue" Duration="300" Delay="100" Easing="EaseInOut" StartX="86" StartY="720" EndX="86" EndY="37" />
@@ -166,30 +166,28 @@
     </Control>
     <Control x:type="Rectangle">
       <Name>Rectangle</Name>
-      <Id>13</Id>
-      <Width>600</Width>
-      <Height>606</Height>
-      <PosX>582</PosX>
-      <PosY>35</PosY>
-      <VisibleCondition>IsControlVisible(12)</VisibleCondition>
+      <Id>12</Id>
+      <Width>1100</Width>
+      <Height>130</Height>
+      <PosX>86</PosX>
+      <PosY>515</PosY>
+      <VisibleCondition>IsControlVisible(10)</VisibleCondition>
       <IsWindowOpenVisible>false</IsWindowOpenVisible>
-      <Animations>
-        <Animation x:type="Slide" Condition="VisibleTrue" Duration="300" Easing="EaseInOut" StartX="582" StartY="720" EndX="582" EndY="35" />
-        <Animation x:type="Slide" Condition="VisibleFalse" Duration="300" Easing="EaseInOut" StartX="582" StartY="35" EndX="582" EndY="720" />
-      </Animations>
+      <Animations />
       <MediaPortalFocusControls />
       <BorderThickness>0,0,0,0</BorderThickness>
       <CornerRadius>12,12,12,12</CornerRadius>
       <BackgroundBrush x:type="ColorBrush" Color="#BE000000" />
     </Control>
     <Control x:type="List">
-      <Name>Vertical List</Name>
-      <Id>12</Id>
+      <Name>Horizontal List</Name>
+      <Id>10</Id>
       <Width>1100</Width>
       <Height>600</Height>
       <PosX>86</PosX>
       <PosY>37</PosY>
-      <VisibleCondition>IsMediaPortalWindow(0) || IsMediaPortalWindow(34)</VisibleCondition>
+      <VisibleCondition>(IsMediaPortalWindow(0) || IsMediaPortalWindow(34)) ++ IsSkinOptionEnabled(Horizontal)</VisibleCondition>
+      <IsWindowOpenVisible>false</IsWindowOpenVisible>
       <Animations />
       <MediaPortalFocusControls />
       <ListControlStyle>
@@ -198,14 +196,14 @@
         <BackgroundBrush />
       </ListControlStyle>
       <ListType>MediaPortalMenuControl</ListType>
-      <ListLayout>Auto</ListLayout>
-      <VerticalItemStyle StyleId="Home Vertical" />
-      <HorizontalItemStyle StyleId="Horizontal" />
+      <ListLayout>Horizontal</ListLayout>
+      <VerticalItemStyle StyleId="Vertical" />
+      <HorizontalItemStyle StyleId="Home Horizontal" />
       <CoverFlowItemStyle StyleId="CoverFlow" />
     </Control>
     <Control x:type="Image">
       <Name>Image</Name>
-      <Id>9</Id>
+      <Id>11</Id>
       <Width>360</Width>
       <Height>360</Height>
       <PosX>12</PosX>
@@ -224,5 +222,5 @@
       <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
     </Control>
   </WindowControls>
-  <VisibleCondition>IsSkinOptionEnabled(Default)</VisibleCondition>
+  <VisibleCondition>(IsMediaPortalWindow(0) || IsMediaPortalWindow(34)) ++ IsSkinOptionEnabled(Horizontal)</VisibleCondition>
 </Window>

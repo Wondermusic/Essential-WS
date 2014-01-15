@@ -14,8 +14,8 @@
   <TextVerticalScrollWrap>true</TextVerticalScrollWrap>
   <TextVerticalScrollSeperator>---------------------------------</TextVerticalScrollSeperator>
   <SkinOptions>
-    <SkinOption Name="Default" Group="BasicHome" IsEnabled="true" IsPreviewImageEnabled="true" PreviewImage="\Preview_Titan.png" />
-    <SkinOption Name="Horizontal" Group="BasicHome" Description="Use this Option if you Skin uses a Horizontal ClassicHome Menu" />
+    <SkinOption Name="Default" Group="BasicHome" IsPreviewImageEnabled="true" PreviewImage="\Preview_Titan.png" Description="Use this Option if you Skin uses a Vertical ClassicHome Menu" />
+    <SkinOption Name="Horizontal" Group="BasicHome" IsEnabled="true" Description="Use this Option if you Skin uses a Horizontal ClassicHome Menu" />
   </SkinOptions>
   <SkinName>Essential-WS</SkinName>
   <Author>Wondermusic</Author>
