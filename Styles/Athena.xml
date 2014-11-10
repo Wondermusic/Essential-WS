@@ -16,30 +16,30 @@
       <GlossBrush />
     </ControlStyle>
     <ControlStyle x:type="LabelStyle" StyleId="60">
-      <FontType>Roboto</FontType>
+      <FontType>Fira Sans OT</FontType>
       <FontSize>60</FontSize>
-      <FontBrush x:type="ColorBrush" Color="#FF000000" />
+      <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
     </ControlStyle>
     <ControlStyle x:type="ImageStyle" StyleId="Background">
       <BorderThickness>0,0,0,0</BorderThickness>
       <CornerRadius>0,0,0,0</CornerRadius>
-      <BackgroundBrush x:type="ImageBrush" Image="\Backgrounds\OnePortal.jpg" Stretch="Fill" />
+      <BackgroundBrush x:type="ImageBrush" Image="\Backgrounds\Athena.jpg" Stretch="Fill" />
       <BorderBrush />
     </ControlStyle>
     <ControlStyle x:type="LabelStyle" StyleId="50">
-      <FontType>Roboto</FontType>
+      <FontType>Fira Sans OT</FontType>
       <FontSize>50</FontSize>
-      <FontBrush x:type="ColorBrush" Color="#FF000000" />
+      <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
     </ControlStyle>
     <ControlStyle x:type="LabelStyle" StyleId="70">
-      <FontType>Roboto</FontType>
+      <FontType>Fira Sans OT</FontType>
       <FontSize>70</FontSize>
-      <FontBrush x:type="ColorBrush" Color="#FF000000" />
+      <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
     </ControlStyle>
     <ControlStyle x:type="LabelStyle" StyleId="40">
-      <FontType>Roboto</FontType>
+      <FontType>Fira Sans OT</FontType>
       <FontSize>40</FontSize>
-      <FontBrush x:type="ColorBrush" Color="#FF000000" />
+      <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
     </ControlStyle>
     <ControlStyle x:type="ProgressBarStyle" StyleId="Standard">
       <BorderThickness>2,2,2,2</BorderThickness>
@@ -107,15 +107,15 @@
       <BackgroundBrush x:type="GradientBrush">
         <Angle>Vertical</Angle>
         <GradientStops>
-          <GradientStop Color="#FFD3D3D3" Offset="0" />
-          <GradientStop Color="#96D3D3D3" Offset="0.576" />
+          <GradientStop Color="#B4000000" Offset="0" />
+          <GradientStop Color="#96000000" Offset="0.576" />
         </GradientStops>
       </BackgroundBrush>
       <BorderBrush x:type="GradientBrush">
         <Angle>Vertical</Angle>
         <GradientStops>
-          <GradientStop Color="#FFB2B2B2" Offset="0" />
-          <GradientStop Color="#89D3D3D3" Offset="1" />
+          <GradientStop Color="#FF515252" Offset="0" />
+          <GradientStop Color="#89525353" Offset="1" />
         </GradientStops>
       </BorderBrush>
       <GlossBrush />
@@ -126,15 +126,15 @@
       <BackgroundBrush x:type="GradientBrush">
         <Angle>Vertical</Angle>
         <GradientStops>
-          <GradientStop Color="#B4D3D3D3" Offset="0" />
-          <GradientStop Color="#96D3D3D3" Offset="0.576" />
+          <GradientStop Color="#B4000000" Offset="0" />
+          <GradientStop Color="#96000000" Offset="0.576" />
         </GradientStops>
       </BackgroundBrush>
       <BorderBrush x:type="GradientBrush">
         <Angle>Vertical</Angle>
         <GradientStops>
-          <GradientStop Color="#FFD3D3D3" Offset="0" />
-          <GradientStop Color="#89A5A5A5" Offset="1" />
+          <GradientStop Color="#FF515252" Offset="0" />
+          <GradientStop Color="#89525353" Offset="1" />
         </GradientStops>
       </BorderBrush>
       <GlossBrush />
@@ -145,15 +145,15 @@
       <BackgroundBrush x:type="GradientBrush">
         <Angle>Vertical</Angle>
         <GradientStops>
-          <GradientStop Color="#B4D3D3D3" Offset="0" />
-          <GradientStop Color="#96D3D3D3" Offset="0.576" />
+          <GradientStop Color="#B4000000" Offset="0" />
+          <GradientStop Color="#96000000" Offset="0.576" />
         </GradientStops>
       </BackgroundBrush>
       <BorderBrush x:type="GradientBrush">
         <Angle>Vertical</Angle>
         <GradientStops>
-          <GradientStop Color="#FFD3D3D3" Offset="0" />
-          <GradientStop Color="#89A5A5A5" Offset="1" />
+          <GradientStop Color="#FF515252" Offset="0" />
+          <GradientStop Color="#89525353" Offset="1" />
         </GradientStops>
       </BorderBrush>
       <GlossBrush />
@@ -164,30 +164,30 @@
       <BackgroundBrush x:type="GradientBrush">
         <Angle>Vertical</Angle>
         <GradientStops>
-          <GradientStop Color="#B4D3D3D3" Offset="0.906" />
-          <GradientStop Color="#96D3D3D3" Offset="0" />
+          <GradientStop Color="#B4000000" Offset="0.906" />
+          <GradientStop Color="#A9525353" Offset="0" />
         </GradientStops>
       </BackgroundBrush>
       <BorderBrush x:type="GradientBrush">
         <Angle>Vertical</Angle>
         <GradientStops>
-          <GradientStop Color="#FFD3D3D3" Offset="0.907" />
-          <GradientStop Color="#89A5A5A5" Offset="0" />
+          <GradientStop Color="#FF525353" Offset="0.907" />
+          <GradientStop Color="#A9525353" Offset="0" />
         </GradientStops>
       </BorderBrush>
       <GlossBrush />
     </ControlStyle>
     <ControlStyle x:type="ListItemStyle" StyleId="Vertical">
-      <BorderThickness>1,1,1,1</BorderThickness>
-      <CornerRadius>4,4,4,4</CornerRadius>
+      <BorderThickness>5,5,5,5</BorderThickness>
+      <CornerRadius>15,15,15,15</CornerRadius>
       <NoFocusBrush />
       <NoFocusBorderBrush />
-      <FocusBrush x:type="ColorBrush" Color="#E1CBCBCB" />
-      <FocusBorderBrush />
-      <FontType>Roboto</FontType>
+      <FocusBrush x:type="ColorBrush" Color="#FF313131" />
+      <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+      <FontType>Fira Sans OT</FontType>
       <FontSize>50</FontSize>
-      <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
-      <NoFocusFontBrush x:type="ColorBrush" Color="#CD000000" />
+      <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+      <NoFocusFontBrush x:type="ColorBrush" Color="#FF808080" />
       <LabelMargin>10,0,0,0</LabelMargin>
       <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
       <ImageMargin>3,3,3,3</ImageMargin>
@@ -200,27 +200,16 @@
       <HorizontalAlignment>Right</HorizontalAlignment>
     </ControlStyle>
     <ControlStyle x:type="ListItemStyle" StyleId="Vertical TVSeries">
-      <BorderThickness>1,1,1,1</BorderThickness>
-      <CornerRadius>4,4,4,4</CornerRadius>
+      <BorderThickness>5,5,5,5</BorderThickness>
+      <CornerRadius>15,15,15,15</CornerRadius>
       <NoFocusBrush />
       <NoFocusBorderBrush />
-      <FocusBrush x:type="GradientBrush">
-        <Angle>Horizontal</Angle>
-        <GradientStops>
-          <GradientStop Color="#FF00B7FF" Offset="0" />
-          <GradientStop Color="#63000000" Offset="0.021" />
-          <GradientStop Color="#6400B7FF" Offset="0.043" />
-          <GradientStop Color="#6400B7FF" Offset="0.065" />
-          <GradientStop Color="#6400B7FF" Offset="0.086" />
-          <GradientStop Color="#8400B7FF" Offset="0.209" />
-          <GradientStop Color="#1A00B7FF" Offset="1" />
-        </GradientStops>
-      </FocusBrush>
-      <FocusBorderBrush />
-      <FontType>Roboto</FontType>
+      <FocusBrush x:type="ColorBrush" Color="#FF313131" />
+      <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+      <FontType>Fira Sans OT</FontType>
       <FontSize>50</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FFFFFAFA" />
-      <NoFocusFontBrush x:type="ColorBrush" Color="#FFF8F8FF" />
+      <NoFocusFontBrush x:type="ColorBrush" Color="#FF808080" />
       <LabelMargin>95,0,0,0</LabelMargin>
       <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
       <EnableImage>true</EnableImage>
@@ -235,21 +224,21 @@
     <ControlStyle x:type="ImageStyle" StyleId="Dialog Background">
       <BorderThickness>1,1,1,1</BorderThickness>
       <CornerRadius>4,4,4,4</CornerRadius>
-      <BackgroundBrush x:type="ImageBrush" Image="\Dialogs\OnePortal\dialog_background.png" Stretch="Fill" />
+      <BackgroundBrush x:type="ImageBrush" Image="\Dialogs\Athena\dialog_background.png" Stretch="Fill" />
       <BorderBrush />
     </ControlStyle>
     <ControlStyle x:type="ListItemStyle" StyleId="Dialog">
-      <BorderThickness>1,1,1,1</BorderThickness>
-      <CornerRadius>4,4,4,4</CornerRadius>
+      <BorderThickness>5,5,5,5</BorderThickness>
+      <CornerRadius>15,15,15,15</CornerRadius>
       <NoFocusBrush />
       <NoFocusBorderBrush />
-      <FocusBrush x:type="ColorBrush" Color="#E1CBCBCB" />
-      <FocusBorderBrush />
+      <FocusBrush x:type="ColorBrush" Color="#FF313131" />
+      <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
       <ShadeBrush />
-      <FontType>Roboto</FontType>
+      <FontType>Fira Sans OT</FontType>
       <FontSize>35</FontSize>
-      <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
-      <NoFocusFontBrush x:type="ColorBrush" Color="#CD000000" />
+      <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+      <NoFocusFontBrush x:type="ColorBrush" Color="#FF808080" />
       <LabelMargin>10,0,0,0</LabelMargin>
       <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
       <ImageMargin>3,3,3,3</ImageMargin>
@@ -261,30 +250,31 @@
       <HorizontalAlignment>Left</HorizontalAlignment>
     </ControlStyle>
     <ControlStyle x:type="ListItemStyle" StyleId="Dialog2">
+      <BorderThickness>5,5,5,5</BorderThickness>
       <CornerRadius>15,15,15,15</CornerRadius>
       <NoFocusBrush />
       <NoFocusBorderBrush />
-      <FocusBrush x:type="ColorBrush" Color="#ABF40D10" />
-      <FocusBorderBrush />
-      <FontType>Roboto</FontType>
+      <FocusBrush x:type="ColorBrush" Color="#FF313131" />
+      <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+      <FontType>Fira Sans OT</FontType>
       <FontSize>18</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
-      <NoFocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+      <NoFocusFontBrush x:type="ColorBrush" Color="#FF808080" />
       <ImageVerticalAlignment>Top</ImageVerticalAlignment>
       <Width>260</Width>
       <Height>60</Height>
     </ControlStyle>
     <ControlStyle x:type="LabelStyle" StyleId="Dialog Title">
-      <FontType>Roboto</FontType>
-      <FontWeight>Black</FontWeight>
+      <FontType>Fira Sans OT</FontType>
+      <FontWeight>Bold</FontWeight>
       <FontSize>50</FontSize>
-      <FontBrush x:type="ColorBrush" Color="#FF000000" />
+      <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
     </ControlStyle>
     <ControlStyle x:type="LabelStyle" StyleId="Dialog Text">
-      <FontType>Roboto</FontType>
-      <FontWeight>Black</FontWeight>
+      <FontType>Fira Sans OT</FontType>
+      <FontWeight>Bold</FontWeight>
       <FontSize>34</FontSize>
-      <FontBrush x:type="ColorBrush" Color="#FF000000" />
+      <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
     </ControlStyle>
     <ControlStyle x:type="GroupStyle" StyleId="NextPlaying">
       <BorderThickness>0,5,5,0</BorderThickness>
@@ -292,15 +282,15 @@
       <BackgroundBrush x:type="GradientBrush">
         <Angle>Vertical</Angle>
         <GradientStops>
-          <GradientStop Color="#B4D3D3D3" Offset="0" />
-          <GradientStop Color="#96D3D3D3" Offset="0.576" />
+          <GradientStop Color="#B4000000" Offset="0" />
+          <GradientStop Color="#96000000" Offset="0.576" />
         </GradientStops>
       </BackgroundBrush>
       <BorderBrush x:type="GradientBrush">
         <Angle>Vertical</Angle>
         <GradientStops>
-          <GradientStop Color="#FFB2B2B2" Offset="0" />
-          <GradientStop Color="#89D3D3D3" Offset="1" />
+          <GradientStop Color="#FF515151" Offset="0" />
+          <GradientStop Color="#89515252" Offset="1" />
         </GradientStops>
       </BorderBrush>
       <GlossBrush />
@@ -350,15 +340,16 @@
       <SelectionZoomDuration>200</SelectionZoomDuration>
     </ControlStyle>
     <ControlStyle x:type="ListItemStyle" StyleId="Home Vertical">
+      <BorderThickness>5,5,5,5</BorderThickness>
+      <CornerRadius>15,15,15,15</CornerRadius>
       <NoFocusBrush />
       <NoFocusBorderBrush />
-      <FocusBrush />
-      <FocusBorderBrush />
-      <EnableLabel>false</EnableLabel>
-      <FontType>Roboto</FontType>
+      <FocusBrush x:type="ColorBrush" Color="#FF313131" />
+      <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+      <FontType>Fira Sans OT</FontType>
       <FontSize>50</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
-      <NoFocusFontBrush x:type="ColorBrush" Color="#FF4682B4" />
+      <NoFocusFontBrush x:type="ColorBrush" Color="#FF808080" />
       <LabelMargin>10,0,0,0</LabelMargin>
       <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
       <ImageHorizontalAlignment>Left</ImageHorizontalAlignment>
@@ -369,16 +360,16 @@
       <SelectionZoomDuration>100</SelectionZoomDuration>
     </ControlStyle>
     <ControlStyle x:type="ListItemStyle" StyleId="Home Horizontal">
-      <BorderThickness>1,1,1,1</BorderThickness>
-      <CornerRadius>4,4,4,4</CornerRadius>
+      <BorderThickness>5,5,5,5</BorderThickness>
+      <CornerRadius>15,15,15,15</CornerRadius>
       <NoFocusBrush />
       <NoFocusBorderBrush />
-      <FocusBrush x:type="ColorBrush" Color="#FFDCDCDC" />
-      <FocusBorderBrush />
-      <FontType>Roboto</FontType>
+      <FocusBrush x:type="ColorBrush" Color="#FF313131" />
+      <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+      <FontType>Fira Sans OT</FontType>
       <FontSize>35</FontSize>
-      <FocusFontBrush x:type="ColorBrush" Color="#FFFFFAFA" />
-      <NoFocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+      <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+      <NoFocusFontBrush x:type="ColorBrush" Color="#FF808080" />
       <LabelMargin>3,3,3,3</LabelMargin>
       <ImageCornerRadius>10</ImageCornerRadius>
       <Width>254</Width>
@@ -388,6 +379,11 @@
       <SelectionZoomX>140</SelectionZoomX>
       <SelectionZoomY>140</SelectionZoomY>
       <SelectionZoomDuration>200</SelectionZoomDuration>
+    </ControlStyle>
+    <ControlStyle x:type="ImageStyle" StyleId="RecIndicator">
+      <BorderThickness>0,0,0,0</BorderThickness>
+      <CornerRadius>0,0,0,0</CornerRadius>
+      <BackgroundBrush x:type="ImageBrush" Image="\Dialogs\Athena\rec.png" Stretch="Uniform" />
     </ControlStyle>
   </ControlStyles>
 </StyleCollection>

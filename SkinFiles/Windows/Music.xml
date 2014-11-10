@@ -69,7 +69,7 @@
           <Id>5</Id>
           <Width>200</Width>
           <Height>200</Height>
-          <PosX>13</PosX>
+          <PosX>340</PosX>
           <PosY>246</PosY>
           <VisibleCondition />
           <Animations />
@@ -83,10 +83,10 @@
         <Control x:type="Equalizer">
           <Name>Equalizer</Name>
           <Id>6</Id>
-          <Width>654</Width>
-          <Height>186</Height>
-          <PosX>228</PosX>
-          <PosY>273</PosY>
+          <Width>330</Width>
+          <Height>184</Height>
+          <PosX>5</PosX>
+          <PosY>260</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -114,7 +114,48 @@
             <BandBorderColor x:type="ColorBrush" Color="#FF00BFFF" />
             <FallOffColor x:type="ColorBrush" Color="#FF00BFFF" />
           </EqualizerStyle>
-          <BandCount>18</BandCount>
+          <BandCount>16</BandCount>
+          <BandSpacing>4</BandSpacing>
+          <BandCornerRadius>0</BandCornerRadius>
+          <FalloffSpeed>4</FalloffSpeed>
+          <FallOffHeight>2</FallOffHeight>
+        </Control>
+        <Control x:type="Equalizer">
+          <Name>Equalizer</Name>
+          <Id>21</Id>
+          <Width>330</Width>
+          <Height>184</Height>
+          <PosX>550</PosX>
+          <PosY>260</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <EqualizerStyle>
+            <BorderThickness>0,0,0,0</BorderThickness>
+            <CornerRadius>0,0,0,0</CornerRadius>
+            <BackgroundBrush />
+            <BorderBrush x:type="ColorBrush" Color="#FF00BFFF" />
+            <LowRangeColor x:type="GradientBrush">
+              <GradientStops>
+                <GradientStop Color="#FF000000" Offset="1" />
+                <GradientStop Color="#FF7FFF00" Offset="0.237" />
+                <GradientStop Color="#FFFFFF00" Offset="0" />
+              </GradientStops>
+              <Angle>Vertical</Angle>
+            </LowRangeColor>
+            <MedRangeColor x:type="GradientBrush">
+              <GradientStops>
+                <GradientStop Color="#FFFFFF00" Offset="0.468" />
+                <GradientStop Color="#FFFF0000" Offset="0" />
+              </GradientStops>
+              <Angle>Vertical</Angle>
+            </MedRangeColor>
+            <MaxRangeColor x:type="ColorBrush" Color="#FFFF0000" />
+            <BandBorderColor x:type="ColorBrush" Color="#FF00BFFF" />
+            <FallOffColor x:type="ColorBrush" Color="#FF00BFFF" />
+          </EqualizerStyle>
+          <EQChannel>1</EQChannel>
+          <BandCount>16</BandCount>
           <BandSpacing>4</BandSpacing>
           <BandCornerRadius>0</BandCornerRadius>
           <FalloffSpeed>4</FalloffSpeed>
@@ -126,34 +167,11 @@
           <Width>330</Width>
           <Height>35</Height>
           <PosX>279</PosX>
-          <PosY>183</PosY>
+          <PosY>175</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <ProgressBarStyle>
-            <BorderThickness>1,1,1,1</BorderThickness>
-            <CornerRadius>5,5,5,5</CornerRadius>
-            <BackgroundBrush x:type="ColorBrush" Color="#FF000000" />
-            <BorderBrush x:type="ColorBrush" Color="#FFC0C0C0" />
-            <ShadeBrush x:type="GradientBrush">
-              <GradientStops>
-                <GradientStop Color="#00000000" Offset="0" />
-                <GradientStop Color="#FF000000" Offset="1" />
-              </GradientStops>
-              <Angle>Vertical</Angle>
-            </ShadeBrush>
-            <BarMargin>2,2,2,2</BarMargin>
-            <BarBorderThickness>1,1,1,1</BarBorderThickness>
-            <BarCornerRadius>3,3,3,3</BarCornerRadius>
-            <BarBorderBrush x:type="ColorBrush" Color="#FFC0C0C0" />
-            <BarBackgroundBrush x:type="GradientBrush">
-              <GradientStops>
-                <GradientStop Color="#FF00BFFF" Offset="0.563" />
-                <GradientStop Color="#FF1294BF" Offset="1" />
-              </GradientStops>
-              <Angle>Vertical</Angle>
-            </BarBackgroundBrush>
-          </ProgressBarStyle>
+          <ProgressBarStyle StyleId="Standard" />
           <ProgressValue>#percentage</ProgressValue>
         </Control>
         <Control x:type="Label">
@@ -362,6 +380,24 @@
           <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
         </Control>
       </GroupControls>
+    </Control>
+    <Control x:type="Image">
+      <Name>RecImage</Name>
+      <Id>22</Id>
+      <Width>200</Width>
+      <Height>84</Height>
+      <PosX>1080</PosX>
+      <PosY>4</PosY>
+      <VisibleCondition>IsTvRecording</VisibleCondition>
+      <IsWindowOpenVisible>false</IsWindowOpenVisible>
+      <Animations>
+        <Animation x:type="Fade" Condition="VisibleTrue" Duration="1000" Easing="EaseInOut" Reverse="true" Repeat="100000" />
+        <Animation x:type="Fade" Condition="VisibleFalse" Duration="1000" Easing="EaseInOut" From="100" To="0" />
+      </Animations>
+      <MediaPortalFocusControls />
+      <ImageStyle StyleId="RecIndicator" />
+      <ImageStretch>None</ImageStretch>
+      <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
     </Control>
   </WindowControls>
   <VisibleCondition>IsPlayer(IsCDA) || IsPlayer(IsMusic)</VisibleCondition>

@@ -405,5 +405,10 @@
       <SelectionZoomY>140</SelectionZoomY>
       <SelectionZoomDuration>200</SelectionZoomDuration>
     </ControlStyle>
+    <ControlStyle x:type="ImageStyle" StyleId="RecIndicator">
+      <BorderThickness>0,0,0,0</BorderThickness>
+      <CornerRadius>0,0,0,0</CornerRadius>
+      <BackgroundBrush x:type="ImageBrush" Image="\Dialogs\MayaHD\tv_is_recording.png" Stretch="Uniform" />
+    </ControlStyle>
   </ControlStyles>
 </StyleCollection>

@@ -16,7 +16,7 @@
       <GlossBrush />
     </ControlStyle>
     <ControlStyle x:type="LabelStyle" StyleId="60">
-      <FontType>Roboto</FontType>
+      <FontType>Avallanche</FontType>
       <FontSize>60</FontSize>
       <FontBrush x:type="ColorBrush" Color="#FF000000" />
     </ControlStyle>
@@ -27,17 +27,17 @@
       <BorderBrush />
     </ControlStyle>
     <ControlStyle x:type="LabelStyle" StyleId="50">
-      <FontType>Roboto</FontType>
+      <FontType>Avallanche</FontType>
       <FontSize>50</FontSize>
       <FontBrush x:type="ColorBrush" Color="#FF000000" />
     </ControlStyle>
     <ControlStyle x:type="LabelStyle" StyleId="70">
-      <FontType>Roboto</FontType>
+      <FontType>Avallanche</FontType>
       <FontSize>70</FontSize>
       <FontBrush x:type="ColorBrush" Color="#FF000000" />
     </ControlStyle>
     <ControlStyle x:type="LabelStyle" StyleId="40">
-      <FontType>Roboto</FontType>
+      <FontType>Avallanche</FontType>
       <FontSize>40</FontSize>
       <FontBrush x:type="ColorBrush" Color="#FF000000" />
     </ControlStyle>
@@ -190,7 +190,7 @@
         </GradientStops>
       </FocusBrush>
       <FocusBorderBrush />
-      <FontType>Roboto</FontType>
+      <FontType>Avallanche</FontType>
       <FontSize>50</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FF708090" />
@@ -236,7 +236,7 @@
         </GradientStops>
       </FocusBrush>
       <FocusBorderBrush />
-      <FontType>Roboto</FontType>
+      <FontType>Avallanche</FontType>
       <FontSize>50</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FFFFFAFA" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FFF8F8FF" />
@@ -271,7 +271,7 @@
       </FocusBrush>
       <FocusBorderBrush />
       <ShadeBrush />
-      <FontType>Roboto</FontType>
+      <FontType>Avallanche</FontType>
       <FontSize>35</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FF708090" />
@@ -293,7 +293,7 @@
       <NoFocusBorderBrush />
       <FocusBrush x:type="ColorBrush" Color="#ABF40D10" />
       <FocusBorderBrush />
-      <FontType>Roboto</FontType>
+      <FontType>Avallanche</FontType>
       <FontSize>18</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FF000000" />
@@ -302,14 +302,14 @@
       <Height>60</Height>
     </ControlStyle>
     <ControlStyle x:type="LabelStyle" StyleId="Dialog Title">
-      <FontType>Roboto</FontType>
-      <FontWeight>Black</FontWeight>
+      <FontType>Avallanche</FontType>
+      <FontWeight>Bold</FontWeight>
       <FontSize>50</FontSize>
       <FontBrush x:type="ColorBrush" Color="#FF000000" />
     </ControlStyle>
     <ControlStyle x:type="LabelStyle" StyleId="Dialog Text">
-      <FontType>Roboto</FontType>
-      <FontWeight>Black</FontWeight>
+      <FontType>Avallanche</FontType>
+      <FontWeight>Bold</FontWeight>
       <FontSize>34</FontSize>
       <FontBrush x:type="ColorBrush" Color="#FF000000" />
     </ControlStyle>
@@ -381,7 +381,7 @@
       <NoFocusBorderBrush />
       <FocusBrush />
       <FocusBorderBrush />
-      <FontType>Roboto</FontType>
+      <FontType>Avallanche</FontType>
       <FontSize>50</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FF708090" />
@@ -402,7 +402,7 @@
       <FocusBrush />
       <FocusBorderBrush />
       <EnableLabel>false</EnableLabel>
-      <FontType>Roboto</FontType>
+      <FontType>Avallanche</FontType>
       <FontSize>35</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FFFFFAFA" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FF708090" />
@@ -415,6 +415,11 @@
       <SelectionZoomX>140</SelectionZoomX>
       <SelectionZoomY>140</SelectionZoomY>
       <SelectionZoomDuration>200</SelectionZoomDuration>
+    </ControlStyle>
+    <ControlStyle x:type="ImageStyle" StyleId="RecIndicator">
+      <BorderThickness>0,0,0,0</BorderThickness>
+      <CornerRadius>0,0,0,0</CornerRadius>
+      <BackgroundBrush x:type="ImageBrush" Image="\Dialogs\Avallanche\rec_indicator.png" Stretch="Uniform" />
     </ControlStyle>
   </ControlStyles>
 </StyleCollection>

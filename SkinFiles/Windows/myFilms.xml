@@ -95,30 +95,7 @@
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <ProgressBarStyle>
-            <BorderThickness>2,2,2,2</BorderThickness>
-            <CornerRadius>20,20,20,20</CornerRadius>
-            <BackgroundBrush />
-            <BorderBrush x:type="ColorBrush" Color="#FFC0C0C0" />
-            <ShadeBrush x:type="GradientBrush">
-              <GradientStops>
-                <GradientStop Color="#00000000" Offset="0" />
-                <GradientStop Color="#FF000000" Offset="1" />
-              </GradientStops>
-              <Angle>Vertical</Angle>
-            </ShadeBrush>
-            <BarMargin>2,2,2,2</BarMargin>
-            <BarBorderThickness>0,0,0,0</BarBorderThickness>
-            <BarCornerRadius>15,15,15,15</BarCornerRadius>
-            <BarBorderBrush x:type="ColorBrush" Color="#FFC0C0C0" />
-            <BarBackgroundBrush x:type="GradientBrush">
-              <GradientStops>
-                <GradientStop Color="#FF0000FF" Offset="0" />
-                <GradientStop Color="#FF00008B" Offset="1" />
-              </GradientStops>
-              <Angle>Vertical</Angle>
-            </BarBackgroundBrush>
-          </ProgressBarStyle>
+          <ProgressBarStyle StyleId="Standard" />
           <ProgressValue>#percentage</ProgressValue>
         </Control>
       </GroupControls>
@@ -343,6 +320,24 @@
           <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
         </Control>
       </GroupControls>
+    </Control>
+    <Control x:type="Image">
+      <Name>RecImage</Name>
+      <Id>21</Id>
+      <Width>200</Width>
+      <Height>84</Height>
+      <PosX>1080</PosX>
+      <PosY>4</PosY>
+      <VisibleCondition>IsTvRecording</VisibleCondition>
+      <IsWindowOpenVisible>false</IsWindowOpenVisible>
+      <Animations>
+        <Animation x:type="Fade" Condition="VisibleTrue" Duration="1000" Easing="EaseInOut" Reverse="true" Repeat="100000" />
+        <Animation x:type="Fade" Condition="VisibleFalse" Duration="1000" Easing="EaseInOut" From="100" To="0" />
+      </Animations>
+      <MediaPortalFocusControls />
+      <ImageStyle StyleId="RecIndicator" />
+      <ImageStretch>None</ImageStretch>
+      <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
     </Control>
   </WindowControls>
   <VisibleCondition>IsPlayer(MyFilms)</VisibleCondition>
